@@ -1,4 +1,258 @@
+/*初始化*/
+h1, h2, h3, h4, h5 {
+    
+    margin: 0px;
+    padding: 0px;
+}
+ul, li {
+    
+    display: inline;
+}
+/*body*/
+body {
+    
+    margin: 0px;
+    padding: 0px;
+    
+    height: 1000px;
+    
+    background-color: azure;
+}
+/*body end*/
+/*nav*/
 h1 {
     
-    color: skyblue
+    position: absolute;
+    text-decoration: none;
+    
+    top: 15px;
+    left: 2.5%;
+    
+    font-size: 20px;
+    
+    color: gray;
 }
+h1 a {
+    
+    text-decoration: none;
+    
+    color: rgb(0,0,0,0.5);
+}
+.nav-title {
+    position: fixed;
+    
+    width: 100%;
+    height: 55px;
+    
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important;
+    
+    z-index: 0;
+}
+.nav-title-v1 {
+    position: fixed;
+    
+    width: 100%;
+    height: 55px;
+    
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important;
+    
+    background-color: white;
+    
+    z-index: 0;
+}
+.title-change {
+    position: absolute;
+    text-decoration: none;
+    
+    top: 15px;
+    left: 5%;
+    
+    font-size: 20px;
+    
+    color: gray;
+}
+.titleBar {
+    position: relative;
+    display: inline-table;
+    list-style: none;
+    float: right;
+    
+    padding: 0px;
+    margin: 0px;
+    
+    top: 10px;
+    right: 5%;   
+}
+.titleBar a {
+    text-decoration: none;    
+}
+.titleBar a:hover {
+    color: grey;
+}
+.titleBar-box {
+    
+    float: left;
+    
+    width: 85px;
+    
+    text-align: center;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+
+    padding: 5px;
+    
+    font-size: 18px;
+    text-align: center;
+    font-family: "Microsoft JhengHei";
+    
+    color: gray;
+}
+.titleBar-box .dropdown-content {
+    display: none;
+    position: relative;
+    list-style: none;
+    float: left;
+    
+    padding: 0px;
+    
+    top: 11px;
+    
+    width: 83px;
+    height: auto;
+
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2),0 2px 10px 0 rgba(0,0,0,0)!important;
+    
+    z-index: 1;
+}
+.dropdown-content-v1 {
+    background-color: white;
+    
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0),0 2px 10px 0 rgba(0,0,0,0)!important;
+    
+    z-index: 1;
+}
+.titleBar-box:hover .dropdown-content {
+    display: inline;
+}
+.dropdown-content .content {
+    display: block;
+    
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+    color: gray;
+    font-family: "Microsoft JhengHei";
+    font-size: 15px;
+    text-align: center;
+}
+.dropdown-content .content:hover {
+    background-color: rgb(0,0,0,0.1);
+}
+@media screen and (min-width: 640px) {
+    .btn-640 {
+        display: none;
+    }
+}
+@media screen and (max-width: 640px) {
+    .titleBar {
+        position: absolute;
+        display: none;
+        
+        height: auto;
+        
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important;
+        
+        top: 56px;
+        right: 0px;
+        
+        width: 150px;
+    }
+    .titleBar-toggle {
+        position: absolute;
+        display: block;
+        
+        height: auto;
+        
+        background-color: white;
+        
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important;
+        
+        top: 55px;
+        right: 0px;
+        
+        width: 150px;
+    }
+    .titleBar-box {
+        width: 150px;
+    }
+    .titleBar a {
+        display: block;
+        text-decoration: none;
+        
+        color: gray;        
+        font-family: "Microsoft JhengHei";
+        font-size: 20px;
+        text-align: left;
+        
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .btn-640 {
+        position: absolute;
+        display: block;
+        
+        padding: 0px;
+        
+        background-color: rgb(0,0,0,0.2);
+        
+        top: 12px;
+        right: 3%;
+        
+        width: 35px;
+        height: 30px;
+
+        border: 2px solid rgb(0,0,0,0.2);
+        border-radius: 10px;
+    }
+    .btn-640 .btn-icon{
+        
+        font-size: 20px;
+    }
+    .dropdown {
+        padding: 0px;
+    }
+    .dropdown-content {
+        display: block;
+    }
+    .titleBar-box .dropdown-content {
+        display: none;
+        position: inherit;
+    }
+    .titleBar-box .dropdown-in {
+        display: block;
+        position: inherit;
+    }
+    .dropdown:active .dropdown-content {
+        display: block;
+    }
+}
+/*nav end*/
+/*main*/
+.demo-1 {
+    
+    height: 350px;
+    
+    background-color: azure;
+}
+.demo-2 {
+    
+    height: 650px;
+    
+    background-color: blueviolet;
+}
+/*main end*/
