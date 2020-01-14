@@ -9,11 +9,13 @@ window.onload = function () {
 function myFunction() {
 
     var navbar = document.getElementById("NavBar");
+    var topbtn = document.getElementById("top-btn");
     var drop = document.getElementsByClassName("dropdown-content");
 
     if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
 
         navbar.classList.add("sticky");
+        topbtn.classList.add("show");
         
 //        for ( i = 0 ; i < drop.length ; i++){
 //            
@@ -22,6 +24,7 @@ function myFunction() {
     } else {
         
         navbar.classList.remove("sticky");
+        topbtn.classList.remove("show");
         
 //        for ( i = 0 ; i < drop.length ; i++){
 //            
