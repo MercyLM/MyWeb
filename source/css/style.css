@@ -675,8 +675,8 @@ p.title {
 
 .item-box-3 .text {
 
-    display: inline;
-    width: 90%;
+    display: inline-block;
+    width: 88%;
 
     box-sizing: border-box;
     border-radius: 2px;
@@ -694,11 +694,86 @@ footer {
 
     bottom: 0px;
 
-    height: 150px;
+    height: 100px;
     width: 100%;
 
-    background: #e0e0e0;
-    opacity: 0.5;
+    background: rgba(224, 224, 224, 0.5);
+}
+
+.footer {
+
+    position: absolute;
+    text-align: center;
+
+    height: 30px;
+    width: 100%;
+
+    margin: 10px 0;
+}
+
+.footer a {
+
+    margin: 0px 10px;
+}
+
+.footer img {
+
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+
+    margin: 0px 5px;
+
+    top: 50%;
+    transform: translateY(-30%);
+}
+
+.footer p {
+
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+
+    line-height: 40px;
+
+    height: 50px;
+    width: 130px;
+
+    background-image: url(../img/icon/icon_msg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+
+    font-size: 18px;
+}
+
+#fb::after {
+
+    content: "";
+    position: absolute;
+
+    height: 50px;
+    width: 50px;
+
+    left: 10px;
+    top: 50%;
+    transform: translateY(-30%);
+
+    background-image: url(../img/icon/icon_ser.png);
+    background-repeat: no-repeat;
+}
+
+.copy-text {
+
+    position: relative;
+    display: block;
+
+    text-align: center;
+
+    top: 70px;
+
+    line-height: 30px;
+
+    font-size: 14px;
 }
 
 /*footer end*/
