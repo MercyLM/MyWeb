@@ -12,7 +12,7 @@ function myFunction() {
     var topbtn = document.getElementById("top-btn");
     var drop = document.getElementsByClassName("dropdown-content");
 
-    if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+    if (document.body.scrollTop > 550 || document.documentElement.scrollTop > 550) {
 
         navbar.classList.add("sticky");
         topbtn.classList.add("show");

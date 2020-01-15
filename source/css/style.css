@@ -50,14 +50,14 @@ body {
 /*header*/
 header {
 
-    height: 400px;
+    height: 550px;
 }
 
 .header-bg {
 
     position: fixed;
 
-    height: 400px;
+    height: 550px;
     width: 100%;
 
     background-image: url(../img/slider_img1.jpg);
@@ -65,28 +65,55 @@ header {
     background-size: cover;
 }
 
-.bg-box {
+.about {
 
-    position: fixed;
+    position: absolute;
+    text-align: center;
 
-    height: 400px;
-    width: 100%;
+    height: 500px;
+    width: 260px;
 
-    z-index: 0;
+    left: 5%;
+    top: 10%;
+
+    text-shadow: 0px 1px 2px rgba(106, 106, 106, 0.9);
 }
 
-.slider-img {
+.about p {
 
-    height: 100%;
-    width: 100%;
+    line-height: 36px;
+    letter-spacing: 0.2em;
+    font-size: 18px;
+}
 
-    object-fit: cover;
+.about p span {
+
+    display: block;
+
+    padding: 20px 0;
+
+    font-size: 24px;
+}
+
+.about button {
+
+    position: relative;
+
+    height: 50px;
+    width: 50px;
+
+    border: 0px;
+
+    background: transparent;
+    background-image: url(../img/icon/icon_btm_btn.png);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .navbar {
 
     position: absolute;
-    top: 400px;
+    top: 550px;
 
     width: 100%;
     height: 70px;
@@ -331,79 +358,84 @@ header {
 aside {
 
     position: fixed;
-    
+
     right: 20px;
     bottom: 20px;
-    
+
     height: auto;
 
     z-index: 10;
 }
+
 .aside-btn-car {
-    
+
     position: absolute;
-    
+
     right: 0px;
     bottom: 175px;
-    
+
     height: 50px;
     width: 50px;
-    
+
     border: 0px;
     border-radius: 50%;
-    
+
     background: white;
     background-image: url(../img/icon/icon_car.png);
     background-repeat: no-repeat;
     background-position: center;
-    
+
     box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.5);
 }
+
 .aside-btn-login {
-    
+
     position: absolute;
-    
+
     right: 0px;
     bottom: 110px;
-    
+
     height: 50px;
     width: 50px;
-    
+
     border: 0px;
     border-radius: 50%;
-    
+
     background: white;
     background-image: url(../img/icon/icon_login.png);
     background-repeat: no-repeat;
     background-position: center;
-    
+
     box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.5);
 }
+
 .aside-top-btn {
-    
+
     display: none;
     position: absolute;
-    
+
     right: 0px;
     bottom: 20px;
-    
+
     height: 50px;
     width: 50px;
-    
+
     border: 0px;
     border-radius: 50%;
-    
+
     background: white;
     background-image: url(../img/icon/icon_top_btn.png);
     background-repeat: no-repeat;
     background-position: center;
-    
+
     box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.5);
 }
+
 .show {
-    
+
     display: block;
 }
+
 /*aside end*/
 /*main*/
 main {
@@ -770,12 +802,13 @@ p.title {
 
 footer {
 
+    position: relative;
     bottom: 0px;
 
     height: 100px;
     width: 100%;
 
-    background: rgba(224, 224, 224, 0.5);
+    background: rgba(224, 224, 224, 1);
 }
 
 .footer {
