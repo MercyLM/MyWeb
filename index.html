@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>藝起來 | 首頁</title>
+    <title>My Web</title>
     <meta name="author" content="Your Name">
     <meta name="description" content="Example description">
     <!--    手機使用-->
@@ -37,7 +37,46 @@
                     <button></button>
                 </div>
             </div>
-            <div id ="navBar"></div>
+            <nav id="nav" class="navbar">
+                <!-- min-width 768 -->
+                <button id="btn" class="btn-640">
+                    <span class="btn-icon">...</span>
+                </button>
+                <!-- 768 end -->
+                <ul class="ul-box">
+                    <li class="titleBar-box">
+                        <a class="dropdown" href="./news/index.html">最新公告</a>
+                    </li>
+                    <li class="titleBar-box">
+                        <a class="dropdown" href="#">商品介紹</a>
+                        <ul class="dropdown-content">
+                            <a href="" class="content">最新商品</a>
+                            <a href="" class="content">熱銷商品</a>
+                            <a href="" class="content">詳細商品</a>
+                        </ul>
+                    </li>
+                    <li class="titleBar-box">
+                        <a class="logo-box" href="index.html">
+                            <img class="logo" src="Logo.png" alt="藝起來">
+                        </a>
+                    </li>
+                    <li class="titleBar-box">
+                        <a class="dropdown" href="#">服務內容</a>
+                        <ul class="dropdown-content">
+                            <a href="" class="content">問與答</a>
+                            <a href="" class="content">知識小站</a>
+                            <a href="" class="content">課程介紹</a>
+                        </ul>
+                    </li>
+                    <li class="titleBar-box">
+                        <a class="dropdown" href="#">關於我們</a>
+                        <ul class="dropdown-content">
+                            <a href="" class="content">友情連結</a>
+                            <a href="" class="content">成立目的</a>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
         </header>
         <aside>
             <a href="#" class="aside-btn-car"></a>
@@ -126,7 +165,23 @@
                 </a>
             </div>
         </main>
-        <div id="footer"></div>
+        <footer>
+            <div class="footer">
+                <a href="#">
+                    <img src="source/img/icon/icon_IG.png">
+                    <p>ID:mynameisid</p>
+                </a>
+                <a href="#">
+                    <img src="source/img/icon/icon_FB.png">
+                    <p id="fb">藝起來</p>
+                </a>
+                <a href="#">
+                    <img src="source/img/icon/icon_TW.png">
+                    <p>ID:mynameisid</p>
+                </a>
+            </div>
+            <p class="copy-text">All Rights Reserved.</p>
+        </footer>
     </div>
 </body>
 
