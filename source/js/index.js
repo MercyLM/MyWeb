@@ -1,5 +1,8 @@
 window.onload = function () {
 
+    //資源載入
+    $("#navBar").load("../source/navbar.html");
+    $("#footer").load("../source/footer.html");
     //初始化
     var timer = null;
     var timerChack = true;
@@ -42,7 +45,7 @@ window.onload = function () {
 
 function myFunction() {
 
-    var navbar = document.getElementById("NavBar");
+    var navbar = document.getElementById("nav");
     var topbtn = document.getElementById("top-btn");
     //    var drop = document.getElementsByClassName("dropdown-content");
 
