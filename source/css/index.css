@@ -35,6 +35,11 @@ main {
     right: 0px;
 }
 
+html {
+
+    font-size: 12px;
+}
+
 /*reset end*/
 /*body*/
 body {
@@ -44,7 +49,7 @@ body {
 
 .body {
 
-    min-width: 1200px;
+    min-width: 1182px;
 }
 
 /*body end*/
@@ -74,32 +79,32 @@ header {
     height: auto;
     width: auto;
 
-    padding: 0px 10px;
+    padding: 1% 1%;
 
     left: 5%;
     top: 10%;
 
     text-shadow: 0px 1px 2px rgba(106, 106, 106, 0.9);
 
-    background: rgb(256, 256, 256, 0.4);
+    background: rgba(256, 256, 256, 0.4);
 
     border-radius: 5px;
 }
 
 .about p {
 
-    line-height: 36px;
-    letter-spacing: 0.2em;
-    font-size: 18px;
+    line-height: 3rem;
+    letter-spacing: 0.25rem;
+    font-size: 1.5rem;
 }
 
 .about p span {
 
     display: block;
 
-    padding: 20px 0;
+    padding: 1.5rem 0;
 
-    font-size: 24px;
+    font-size: 2rem;
 }
 
 .about button {
@@ -123,9 +128,9 @@ header {
     top: 550px;
 
     width: 100%;
-    min-width: 1200px;
+    min-width: 1182px;
 
-    /*    text-align: center;*/
+    text-align: center;
 
     background: #e0e0e0;
 
@@ -148,8 +153,10 @@ header {
 
     list-style: none;
 
+    /*
     left: 50%;
     transform: translateX(-50%);
+*/
 
     padding: 0px;
     margin: 0px;
@@ -170,7 +177,7 @@ header {
     width: 125px;
 
     font-family: "華康中特圓體";
-    font-size: 24px;
+    font-size: 2rem;
 
     color: #747171;
 
@@ -204,7 +211,7 @@ header {
 
     width: 100%;
 
-    font-size: 18px;
+    font-size: 1.5rem;
     text-align: center;
     font-family: "Microsoft JhengHei";
 
@@ -237,32 +244,13 @@ header {
 
     line-height: 35px;
 
-    font-size: 18px;
+    font-size: 1.5rem;
     text-align: center;
 }
 
 .dropdown-content .content:hover {
     background-color: rgb(0, 0, 0, 0.1);
 }
-
-@media screen and (max-width : 1200px) {
-
-    .ul-box {
-
-        position: relative;
-        display: inline-block;
-
-        list-style: none;
-        
-        left: 0;
-        transform: translateX(0);
-
-        padding: 0px;
-        margin: 0px;
-    }
-}
-
-@media screen (max-width : 768px) {}
 
 /*header end*/
 /*aside*/
@@ -368,7 +356,7 @@ p.title {
     margin-bottom: 25px;
 
     text-align: center;
-    font-size: 30px;
+    font-size: 2.5rem;
     font-weight: bold;
     letter-spacing: 0.2em;
 }
@@ -426,7 +414,7 @@ p.title {
 
     padding: 20px 0 10px 0;
 
-    font-size: 24px;
+    font-size: 2rem;
     font-weight: 100;
     letter-spacing: 0.1em;
 }
@@ -437,7 +425,7 @@ p.title {
 
     padding: 10px 0;
 
-    font-size: 16px;
+    font-size: 1.25rem;
     font-weight: 100;
     letter-spacing: 0.15em;
 }
@@ -449,8 +437,8 @@ p.title {
 
     padding: 20px 0;
 
-    font-size: 24px;
-    font-weight: 900;
+    font-size: 2rem;
+    font-weight: bold;
     letter-spacing: 0.15em;
 }
 
@@ -543,7 +531,7 @@ p.title {
 
     padding: 20px 0;
 
-    font-size: 18px;
+    font-size: 1.5rem;
     font-weight: 100;
     letter-spacing: 0.1em;
 }
@@ -555,8 +543,8 @@ p.title {
 
     padding: 20px 0;
 
-    font-size: 24px;
-    font-weight: 900;
+    font-size: 2rem;
+    font-weight: bold;
     letter-spacing: 0.15em;
 }
 
@@ -591,7 +579,7 @@ p.title {
     text-align: left;
     padding: 20px 0 20px 0;
 
-    font-size: 24px;
+    font-size: 2rem;
     font-weight: 100;
     letter-spacing: 0.1em;
 }
@@ -600,9 +588,9 @@ p.title {
 
     text-align: left;
 
-    font-size: 18px;
+    font-size: 1.5rem;
     font-weight: 100;
-    line-height: 36px;
+    line-height: 3rem;
     letter-spacing: 0.1em;
 }
 
@@ -620,7 +608,7 @@ p.title {
     border: 2px solid rgba(106, 106, 106, 0.3);
     border-radius: 2px;
 
-    font-size: 18px;
+    font-size: 1.5rem;
     letter-spacing: 0.1em;
     line-height: 50px;
     color: #6a6a6a;
@@ -639,7 +627,7 @@ p.title {
     background: rgba(106, 106, 106, 0.3);
     border-radius: 2px;
 
-    font-size: 18px;
+    font-size: 1.5rem;
     letter-spacing: 0.1em;
     line-height: 50px;
     color: #6a6a6a;
@@ -689,7 +677,7 @@ p.title {
     padding: 10px 0 20px 0;
     margin: 0px;
 
-    font-size: 24px;
+    font-size: 2rem;
     font-weight: bold;
     letter-spacing: 0.1em;
 }
@@ -702,7 +690,7 @@ p.title {
     box-sizing: border-box;
     border-radius: 2px;
 
-    font-size: 18px;
+    font-size: 1.5rem;
     letter-spacing: 0.1em;
     line-height: 30px;
     color: #6a6a6a;
@@ -765,7 +753,7 @@ footer {
     background-repeat: no-repeat;
     background-position: center;
 
-    font-size: 18px;
+    font-size: 1.5rem;
 }
 
 #fb::after {
@@ -795,7 +783,127 @@ footer {
 
     line-height: 30px;
 
-    font-size: 14px;
+    font-size: 1.25rem;
 }
 
 /*footer end*/
+/*moblie*/
+@media screen and (max-width : 1200px) {
+
+    html {
+
+        font-size: 10px;
+    }
+
+    .body {
+
+        width: 100%;
+        min-width: 750px;
+    }
+
+    .about button {
+
+        height: 40px;
+        width: 40px;
+    }
+
+    .navbar {
+
+        width: 100%;
+        min-width: 750px;
+
+        background: #e0e0e0;
+
+        z-index: 10;
+    }
+
+    .ul-box {
+
+        position: relative;
+        display: inline-block;
+
+        list-style: none;
+
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .logo {
+
+        height: 40px;
+        width: 200px;
+
+        padding: 15px 10px;
+    }
+
+    .text-area .btn-1 {
+
+        height: 40px;
+        line-height: 40px;
+        width: 125px;
+
+        bottom: 50px;
+    }
+
+    .text-area .btn-2 {
+
+        height: 40px;
+        line-height: 40px;
+        width: 125px;
+    }
+
+    .btn-right {
+
+        position: absolute;
+        right: 0px;
+        top: 50%;
+        transform: translateY(-50%);
+
+        height: 40px;
+        width: 40px;
+
+        border: 0px;
+        border-radius: 2px;
+        background: #6a6a6a;
+
+        opacity: 0.3;
+    }
+
+    .btn-left {
+
+        position: absolute;
+        left: 0px;
+        top: 50%;
+        transform: translateY(-50%);
+
+        height: 40px;
+        width: 40px;
+
+        border: 0px;
+        border-radius: 2px;
+        background: #6a6a6a;
+
+        opacity: 0.3;
+    }
+
+    .btn {
+
+        height: 60%;
+        width: 50%;
+    }
+
+    .item-box-3 a {
+
+        width: 25%;
+    }
+
+    .item-box-3 a img {
+
+        height: auto;
+        width: 67.5%;
+    }
+}
+
+@media screen (max-width : 768px) {}
+
+/*moblie end*/
