@@ -127,8 +127,7 @@ header {
 
     width: 100%;
     min-width: 1200px;
-/*    height: 70px;*/
-
+    
     text-align: center;
 
     background: #e0e0e0;
@@ -147,6 +146,7 @@ header {
 
 .ul-box {
 
+    position: relative;
     display: inline-block;
 
     list-style: none;
