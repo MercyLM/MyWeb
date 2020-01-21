@@ -80,10 +80,12 @@ function menuFunction(menu, menuBox, menuClose){
     menu.onclick = function(){
         
         menuBox.style.width = "100%";
+        menu.style.display = "none";
     }
     
     menuClose.onclick = function(){
         
         menuBox.style.width = "0%";
+        menu.style.display = "inline-block";
     }
 }

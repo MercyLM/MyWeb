@@ -138,8 +138,8 @@ header {
     text-align: center;
 
     background: #e0e0e0;
-
-    z-index: 10;
+    
+    z-index: 2;
 }
 
 .sticky {
@@ -267,7 +267,7 @@ aside {
 
     height: auto;
 
-    z-index: 5;
+    z-index: 4;
 }
 
 .aside-btn-car {
@@ -817,8 +817,6 @@ footer {
         min-width: 750px;
 
         background: #e0e0e0;
-
-        z-index: 10;
     }
 
     .ul-box {
@@ -906,6 +904,10 @@ footer {
         height: auto;
         width: 67.5%;
     }
+    .close-menu {
+        
+        display: none;
+    }
 }
 
 @media screen and (max-width : 768px) {
@@ -915,6 +917,16 @@ footer {
         width: 100%;
         min-width: 0px;
         max-width: 750px;
+    }
+    
+    aside {
+        
+        z-index: 1;
+    }
+    
+    .aside-btn-car, .aside-btn-login {
+        
+        display: none;
     }
 
     .navbar {
@@ -938,7 +950,7 @@ footer {
 
     .li-box {
 
-        left: 45%;
+        left: 50%;
         transform: translateX(-50%);
     }
 
@@ -949,7 +961,8 @@ footer {
 
     .menu-box {
 
-        position: relative;
+        display: inline-block;
+        position: absolute;
     }
 
     .menu-btn {
@@ -960,6 +973,8 @@ footer {
         width: 50px;
 
         margin: 10px;
+        
+        border-radius: 10px;
 
         background-image: url(../img/icon/icon-menu.png);
         background-repeat: no-repeat;
@@ -988,7 +1003,7 @@ footer {
         text-align: center;
 
         transition: 0.3s;
-        z-index: 10;
+        z-index: 1;
     }
 
     .mobile-li {
@@ -1051,6 +1066,8 @@ footer {
         
         height: 50px;
         width: 50px;
+        
+        margin: 10px;
         
         border-radius: 50%;
         border: 1px solid rgba(0,0,0,0.5);
