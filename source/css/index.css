@@ -82,7 +82,8 @@ header {
     padding: 1% 1%;
 
     left: 5%;
-    top: 10%;
+    top: 50%;
+    transform: translateY(-50%);
 
     text-shadow: 0px 1px 2px rgba(106, 106, 106, 0.9);
 
@@ -157,11 +158,6 @@ header {
     display: inline-block;
 
     list-style: none;
-
-    /*
-    left: 50%;
-    transform: translateX(-50%);
-*/
 
     padding: 0px;
     margin: 0px;
@@ -254,6 +250,11 @@ header {
 
 .dropdown-content .content:hover {
     background-color: rgb(0, 0, 0, 0.1);
+}
+
+.close-menu {
+
+    display: none;
 }
 
 /*header end*/
@@ -904,11 +905,6 @@ footer {
         height: auto;
         width: 67.5%;
     }
-
-    .close-menu {
-
-        display: none;
-    }
 }
 
 @media screen and (max-width : 768px) {
@@ -925,6 +921,12 @@ footer {
         z-index: 1;
     }
 
+    .about {
+        
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
     .aside-btn-car,
     .aside-btn-login {
 
@@ -1147,7 +1149,7 @@ footer {
         display: block;
 
         margin: 20px 0 0 0;
-        
+
         left: 50%;
         transform: translateX(-50%);
 
@@ -1162,9 +1164,9 @@ footer {
 
         position: relative;
         display: block;
-        
+
         text-align: center;
-        
+
         width: 100%;
     }
 
@@ -1183,11 +1185,11 @@ footer {
     .item-box-3 .text {
 
         display: block;
-        
+
         text-align: center;
-        
+
         width: 100%;
-        
+
         padding: 0 5% 10px 5%;
 
         box-sizing: border-box;
@@ -1198,9 +1200,9 @@ footer {
         line-height: 30px;
         color: #6a6a6a;
     }
-    
+
     .footer {
-        
+
         padding-bottom: 0;
     }
 
