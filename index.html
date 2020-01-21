@@ -10,12 +10,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--    IE使用-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="source/css/index.css">
     <link rel="icon" type="image/x-icon" href="MercyLM.png" />
     <link rel="apple-touch-icon" href="MercyLM.png">
     <!--    全域資源-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="source/js/index.js"></script>
+    <!--    CSS-->
+    <link rel="stylesheet" href="source/css/index.css">
 </head>
 
 <body>
@@ -34,23 +35,52 @@
                         視覺上、心靈上<br>
                         獲得最棒的享受
                     </p>
-                    <button></button>
+                    <!--                    <button></button>-->
                 </div>
             </div>
             <nav id="nav" class="navbar">
+                <!--max-width 768px-->
+                <ul id="menu-box" class="mobile-ul">
+                    <button id = "close-menu" class = "close-menu"></button>
+                    <li class="mobile-li">
+                        <a class="mobile-dropdown" href="./news/index.html">最新公告</a>
+                    </li>
+                    <li class="mobile-li">
+                        <a class="mobile-dropdown" href="javascript:">商品介紹</a>
+                        <ul class="mobile-dropdown-content">
+                            <a href="" class="content">最新商品</a>
+                            <a href="" class="content">熱銷商品</a>
+                        </ul>
+                    </li>
+                    <li class="mobile-li">
+                        <a class="mobile-dropdown" href="javascript:">服務內容</a>
+                        <ul class="mobile-dropdown-content">
+                            <a href="" class="content">問與答</a>
+                            <a href="" class="content">知識小站</a>
+                            <a href="" class="content">課程介紹</a>
+                        </ul>
+                    </li>
+                    <li class="mobile-li">
+                        <a class="mobile-dropdown" href="javascript:">關於我們</a>
+                        <ul class="mobile-dropdown-content">
+                            <a href="" class="content">友情連結</a>
+                            <a href="" class="content">成立目的</a>
+                        </ul>
+                    </li>
+                </ul>
+                <!--max-width 768px end-->
                 <ul class="ul-box">
-                    <!--max-width 768px-->
-                    <button class="navbar-btn"></button>
-                    <!--max-width 768px end-->
+                    <li class="menu-box">
+                        <a id = "menu" href="javascript:" class="menu-btn"></a>
+                    </li>
                     <li class="li-box">
                         <a class="dropdown" href="./news/index.html">最新公告</a>
                     </li>
                     <li class="li-box">
-                        <a class="dropdown" href="#">商品介紹</a>
+                        <a class="dropdown" href="javascript:">商品介紹</a>
                         <ul class="dropdown-content">
                             <a href="" class="content">最新商品</a>
                             <a href="" class="content">熱銷商品</a>
-                            <a href="" class="content">詳細商品</a>
                         </ul>
                     </li>
                     <li class="li-box">
@@ -59,7 +89,7 @@
                         </a>
                     </li>
                     <li class="li-box">
-                        <a class="dropdown" href="#">服務內容</a>
+                        <a class="dropdown" href="javascript:">服務內容</a>
                         <ul class="dropdown-content">
                             <a href="" class="content">問與答</a>
                             <a href="" class="content">知識小站</a>
@@ -67,7 +97,7 @@
                         </ul>
                     </li>
                     <li class="li-box">
-                        <a class="dropdown" href="#">關於我們</a>
+                        <a class="dropdown" href="javascript:">關於我們</a>
                         <ul class="dropdown-content">
                             <a href="" class="content">友情連結</a>
                             <a href="" class="content">成立目的</a>
@@ -79,7 +109,7 @@
         <aside>
             <a href="#" class="aside-btn-car"></a>
             <a href="#" class="aside-btn-login"></a>
-            <button id="top-btn" class="aside-top-btn"></button>
+            <a href="javascript:" id="top-btn" class="aside-top-btn"></a>
         </aside>
         <main>
             <p class="title">精選商品</p>

@@ -8,6 +8,11 @@ window.onload = function () {
     var timerChack = true;
     //物件預載
     var btn = document.getElementById("top-btn");
+    var menu = document.getElementById("menu");
+    var menuBox = document.getElementById("menu-box");
+    var menuClose = document.getElementById("close-menu");
+    
+    menuFunction(menu, menuBox, menuClose);
 
     window.onscroll = function () {
 
@@ -27,7 +32,7 @@ window.onload = function () {
             timer = setInterval(function () {
 
                 var top = document.documentElement.scrollTop || document.body.scrollTop;
-                var speed = Math.floor(-top / 15);
+                var speed = Math.floor(-top / 6);
 
                 document.documentElement.scrollTop = document.body.scrollTop = top + speed;
 
@@ -67,5 +72,18 @@ function myFunction() {
         //            
         //            drop[i].className = drop[i].className.replace(" dropdown-content-v1", "");
         //        }
+    }
+}
+
+function menuFunction(menu, menuBox, menuClose){
+    
+    menu.onclick = function(){
+        
+        menuBox.style.width = "100%";
+    }
+    
+    menuClose.onclick = function(){
+        
+        menuBox.style.width = "0%";
     }
 }
