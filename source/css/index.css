@@ -640,8 +640,9 @@ p.title {
 
     text-align: center;
 
-    height: 500px;
     width: 100%;
+
+    padding-bottom: 20px;
 }
 
 .item-box-3 a {
@@ -652,7 +653,6 @@ p.title {
     margin: 0px 20px;
 
     width: 270px;
-    height: 450px;
 
     box-sizing: border-box;
 
@@ -704,10 +704,10 @@ p.title {
 
 footer {
 
+    display: block;
     position: relative;
     bottom: 0px;
 
-    height: 100px;
     width: 100%;
 
     background: rgba(224, 224, 224, 1);
@@ -715,17 +715,20 @@ footer {
 
 .footer {
 
-    position: absolute;
+    position: relative;
     text-align: center;
 
-    height: 30px;
-    width: 100%;
+    vertical-align: middle;
 
-    margin: 10px 0;
+    padding: 20px 0;
+
+    width: 100%;
 }
 
 .footer a {
 
+    position: relative;
+    display: inline-block;
     margin: 0px 10px;
 }
 
@@ -733,12 +736,11 @@ footer {
 
     display: inline-block;
     position: relative;
-    vertical-align: top;
+    vertical-align: middle;
+
+    height: 40px;
 
     margin: 0px 5px;
-
-    top: 50%;
-    transform: translateY(-30%);
 }
 
 .footer p {
@@ -781,8 +783,6 @@ footer {
     display: block;
 
     text-align: center;
-
-    top: 70px;
 
     line-height: 30px;
 
@@ -895,6 +895,7 @@ footer {
 
     .item-box-3 a {
 
+        min-height: 400px;
         width: 25%;
     }
 
@@ -1109,6 +1110,91 @@ footer {
         box-sizing: border-box;
 
         background: #fafafa;
+    }
+
+    .item-box-3 {
+
+        position: relative;
+        text-align: inherit;
+
+        padding: 0px;
+
+        width: 100%;
+    }
+
+    .item-box-3 a {
+
+        position: relative;
+        display: inline-block;
+
+        margin: 0;
+
+        min-height: 0;
+        width: 100%;
+
+        box-sizing: border-box;
+
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+        background: rgba(235, 235, 235, 0.7);
+
+        box-shadow: 0px 0px 0px;
+    }
+
+    .item-box-3 a img {
+
+        position: relative;
+        display: inline-block;
+
+        margin: 20px 5%;
+
+        width: 20%;
+
+        border-radius: 50%;
+
+        box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    .text-box {
+
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+
+        width: 70%;
+    }
+
+    .item-box-3 .text-title {
+
+        display: inline-block;
+        vertical-align: top;
+
+        padding: 20px 0 20px 0;
+        margin: 0px;
+
+        font-size: 2rem;
+        font-weight: bold;
+        letter-spacing: 0.1em;
+    }
+
+    .item-box-3 .text {
+
+        display: inline-block;
+        vertical-align: top;
+
+        box-sizing: border-box;
+        border-radius: 2px;
+
+        font-size: 1.5rem;
+        letter-spacing: 0.1em;
+        line-height: 30px;
+        color: #6a6a6a;
+    }
+
+    .footer a {
+
+        position: relative;
+        display: block;
     }
 }
 
