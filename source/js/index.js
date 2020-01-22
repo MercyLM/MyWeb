@@ -1,8 +1,8 @@
 window.onload = function () {
 
-    //資源載入
-//    $("#navBar").load("../source/navbar.html");
-//    $("#footer").load("../source/footer.html");
+    //載入
+//    $("#nav").load("./source/navbar.html");
+//    $("#footer").load("./footer.html");
     //初始化
     var timer = null;
     var timerChack = true;
