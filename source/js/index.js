@@ -1,8 +1,14 @@
+$(function(){
+    
+    $("#nav").load("./source/navbar.html");
+    $("#footer").load("./source/footer.html");
+});
+
 window.onload = function () {
 
     //載入
 //    $("#nav").load("./source/navbar.html");
-//    $("#footer").load("./footer.html");
+//    $("#footer").load("./source/footer.html");
     //初始化
     var timer = null;
     var timerChack = true;
@@ -11,8 +17,8 @@ window.onload = function () {
     var menu = document.getElementById("menu");
     var menuBox = document.getElementById("menu-box");
     var menuClose = document.getElementById("close-menu");
-    
-    menuFunction(menu, menuBox, menuClose);
+
+    menuFunction(menu, menuBox, menuClose)
 
     window.onscroll = function () {
 
@@ -66,16 +72,16 @@ function myFunction() {
     }
 }
 
-function menuFunction(menu, menuBox, menuClose){
-    
-    menu.onclick = function(){
-        
+function menuFunction(menu, menuBox, menuClose) {
+
+    menu.onclick = function () {
+
         menuBox.style.width = "100%";
         menu.style.display = "none";
     }
-    
-    menuClose.onclick = function(){
-        
+
+    menuClose.onclick = function () {
+
         menuBox.style.width = "0%";
         menu.style.display = "inline-block";
     }
