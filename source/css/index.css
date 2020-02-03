@@ -1218,6 +1218,10 @@ main > p::after {
 
 @media screen and (max-width : 575px) {
     
+    .header-text::after {
+        
+        left: -10%;
+    }
     .news-box .btn-more,
     .title-box .btn-more,
     .class-box .box-title .btn-more,
