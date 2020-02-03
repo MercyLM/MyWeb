@@ -422,6 +422,10 @@ aside {
 
 @media screen and (max-width : 768px) {
 
+    html {
+        
+        font-size: 9px;
+    }
     .body {
 
         width: 100%;
@@ -608,5 +612,29 @@ aside {
         font-size: 20px;
 
         color: rgba(0, 0, 0, 0.5);
+    }
+}
+
+@media screen and (max-width : 575px) {
+    
+    .footer .group-box {
+        
+        position: static;
+        
+        top: 0;
+        transform: translateY(0);
+        left: 0;
+        
+        padding: 20px 0;
+        
+        text-align: center;
+    }
+    
+    .footer span {
+        
+        display: block;
+        position: static;
+        
+        text-align: center;
     }
 }

@@ -1122,6 +1122,32 @@ main > p::after {
 
 @media screen and (max-width : 768px) {
 
+    main > p::before {
+        
+        width: 70%;
+    }
+    
+    .title-shop,
+    .title-class,
+    .title-about{
+        
+        font-size: 6rem;
+        
+    }
+    
+    .title-class::before {
+        
+        top: 60%;
+        width: 40%;
+    }
+    
+    .title-class::after {
+        
+        top: 60%;
+        width: 20%;
+    }
+    
+    
     .footer .group {
 
         height: 35px;
@@ -1169,6 +1195,16 @@ main > p::after {
         top: 100px;
     }
     
+    .class-box .box-title {
+        
+        width: 30%;
+    }
+    
+    .class-box .box-item {
+        
+        width: 50%;
+    }
+    
     .about-box-bg {
 
         height: 550px;
@@ -1177,6 +1213,130 @@ main > p::after {
     .about-box .box-title .text {
         
         width: 50%;
+    }
+}
+
+@media screen and (max-width : 575px) {
+    
+    .news-box .btn-more,
+    .title-box .btn-more,
+    .class-box .box-title .btn-more,
+    .about-box .box-title .btn-more {
+        
+        height: 40px;
+        line-height: 40px;
+        width: 100px;
+    }
+    
+    .title-store {
+        
+        top: -16px;
+        
+        font-size: 4rem;
+    }
+    
+    .shop-box > .box-title {
+        
+        font-size: 4rem;
+    }
+    
+    .news-box .title {
+        
+        right: inherit;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .news-box .item-list .card-1 {
+
+        top: 80px;
+    }
+    
+    .news-box .item-list .card-1 .title, 
+    .news-box .item-list .card-2 .title, 
+    .news-box .item-list .card-3 .title {
+        
+        left: 50%;
+    }
+    
+    .news-box .item-list .card-2 {
+        
+        display: none;
+    }
+    
+    .class-box {
+        
+        height: 400px;
+    }
+    
+    .class-box-bg {
+        
+        height: 500px;
+    }
+    
+    .class-box .box-title .btn-more {
+        
+        bottom: -40px;
+    }
+    
+    .title-about::before {
+        
+        top: -75px;
+        height: 100px
+    }
+    
+    .title-about::after {
+        
+        top: 55%;
+        right: -25px;
+        
+        width: 100px;
+    }
+    
+    .about-box .title {
+        
+        left: 45%;
+        
+        top: 64px;
+    }
+    
+    .about-box-bg {
+        
+        height: 350px;
+    }
+    
+    .about-box {
+        
+        height: 250px;
+    }
+    
+    .about-box .box-item {
+        
+        display: none;
+    }
+    
+    .about-box .box-title {
+        
+        width: 100%;
+    }
+    
+    .about-box .box-title .text {
+        
+        display: block;
+        margin: 0 auto;
+        width: 90%;
+    }
+    
+    .about-box .box-title img {
+        
+        display: none;
+    }
+    
+    .about-box .box-title .btn-more {
+        
+        bottom: -40px;
+        left: 50%;
+        transform: translateX(-50%);
     }
 }
 
