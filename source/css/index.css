@@ -182,6 +182,21 @@ main {
     border: 1px solid rgb(250, 247, 247);
 
     letter-spacing: 0.5rem;
+    
+    transition: 0.5s;
+}
+
+.btn-more:hover,
+.news-box .btn-more:hover,
+.title-box .btn-more:hover,
+.class-box .box-title .btn-more:hover,
+.about-box .box-title .btn-more:hover{
+    
+    color: rgb(150, 89, 28);
+    
+    background: rgba(250, 247, 247, 0.75);
+    
+    border: 1px solid rgb(150, 89, 28);
 }
 
 main > p {
@@ -254,7 +269,6 @@ main > p::after {
     height: 500px;
     width: 100%;
 
-    /*    transform: skewY(10deg);*/
     clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 80%);
 
     box-sizing: content-box;
@@ -286,15 +300,12 @@ main > p::after {
     position: relative;
 
     height: 160%;
-
-    /*    top: -32.5%;*/
+    
     left: 0px;
 
     background: url("../img/slider_img2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-
-    /*    transform: skewY(-10deg);*/
 }
 
 .news-box .title {
@@ -338,6 +349,8 @@ main > p::after {
     width: 300px;
 
     background: rgba(150, 89, 28, 0.75);
+    
+    transition: 0.5s;
 }
 
 .news-box .item-list .card-2 {
@@ -353,6 +366,8 @@ main > p::after {
     width: 300px;
 
     background: rgba(150, 89, 28, 0.75);
+    
+    transition: 0.5s;
 }
 
 .news-box .item-list .card-3 {
@@ -368,6 +383,15 @@ main > p::after {
     width: 300px;
 
     background: rgba(150, 89, 28, 0.75);
+    
+    transition: 0.5s;
+}
+
+.news-box .item-list .card-1:hover,
+.news-box .item-list .card-2:hover,
+.news-box .item-list .card-3:hover {
+    
+    transform: translateY(-20px);
 }
 
 .news-box .item-list .card-1 .img-box,
