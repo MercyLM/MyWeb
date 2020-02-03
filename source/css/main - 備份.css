@@ -1,0 +1,512 @@
+/*reset*/
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+span,
+body {
+
+    margin: 0px;
+    padding: 0px;
+
+    font-family: "華康中圓體";
+    color: #6a6a6a;
+}
+
+.body {}
+
+a {
+
+    text-decoration: none;
+}
+
+ul,
+li {
+
+    display: inline;
+}
+
+header,
+main {
+
+    left: 0px;
+    right: 0px;
+}
+
+html {
+
+    font-size: 12px;
+}
+
+/*reset end*/
+/*body*/
+body {
+
+    font-size: 0px;
+}
+
+.body {
+
+    min-width: 1182px;
+}
+
+/*body end*/
+/*header*/
+.navbar-btn {
+
+    display: none;
+}
+
+.navbar {
+
+    position: absolute;
+    top: 550px;
+
+    width: 100%;
+    min-width: 1182px;
+
+    text-align: center;
+
+    background: #e0e0e0;
+
+    z-index: 2;
+}
+
+.sticky {
+
+    position: fixed;
+
+    top: 0px;
+
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.ul-box {
+
+    position: relative;
+    display: inline-block;
+
+    list-style: none;
+
+    padding: 0px;
+    margin: 0px;
+}
+
+.li-box {
+
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+
+    text-align: center;
+}
+
+.li-box a {
+
+    line-height: 70px;
+    width: 125px;
+
+    font-family: "華康中特圓體";
+    font-size: 2rem;
+
+    color: #747171;
+
+    opacity: 0.7;
+}
+
+.li-box a:hover {
+    color: black;
+}
+
+.li-box .logo-box {
+
+    line-height: 0px;
+    width: auto;
+
+    font-size: 0px;
+    opacity: 1;
+}
+
+.logo {
+
+    height: 50px;
+    width: 250px;
+
+    padding: 10px 20px;
+}
+
+.dropdown {
+
+    display: inline-block;
+
+    width: 100%;
+
+    font-size: 1.5rem;
+    text-align: center;
+
+    color: gray;
+}
+
+.li-box .dropdown-content {
+    position: absolute;
+    display: none;
+    list-style: none;
+
+    top: 70px;
+    left: 0px;
+
+    padding: 0px;
+
+    height: auto;
+
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+
+    z-index: 1;
+}
+
+.li-box:hover .dropdown-content {
+    display: inline;
+}
+
+.dropdown-content .content {
+    display: block;
+
+    line-height: 35px;
+
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.dropdown-content .content:hover {
+    background-color: rgb(0, 0, 0, 0.3);
+}
+
+.mobile-ul {
+
+    display: none;
+}
+
+.menu-box {
+
+    display: none;
+}
+
+.close-menu {
+
+    display: none;
+}
+
+/*header end*/
+/*aside*/
+aside {
+
+    position: fixed;
+
+    right: 20px;
+    bottom: 20px;
+
+    height: auto;
+
+    z-index: 4;
+}
+
+.aside-btn-car {
+
+    position: absolute;
+
+    right: 0px;
+    bottom: 175px;
+
+    height: 50px;
+    width: 50px;
+
+    border: 0px;
+    border-radius: 50%;
+
+    background: white;
+    background-image: url(../img/icon/icon_car.png);
+    background-repeat: no-repeat;
+    background-position: center;
+
+    box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.5);
+}
+
+.aside-btn-login {
+
+    position: absolute;
+
+    right: 0px;
+    bottom: 110px;
+
+    height: 50px;
+    width: 50px;
+
+    border: 0px;
+    border-radius: 50%;
+
+    background: white;
+    background-image: url(../img/icon/icon_login.png);
+    background-repeat: no-repeat;
+    background-position: center;
+
+    box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.5);
+}
+
+.aside-top-btn {
+
+    display: none;
+    position: absolute;
+
+    right: 0px;
+    bottom: 20px;
+
+    height: 50px;
+    width: 50px;
+
+    border: 0px;
+    border-radius: 50%;
+
+    background: white;
+    background-image: url(../img/icon/icon-goTop.png);
+    background-repeat: no-repeat;
+    background-position: center;
+
+    box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.5);
+}
+
+.show {
+
+    display: block;
+}
+/*aside end*/
+@media screen and (max-width : 1200px) {
+
+    html {
+
+        font-size: 10px;
+    }
+
+    .body {
+
+        width: 100%;
+        min-width: 750px;
+    }
+
+    .about button {
+
+        height: 40px;
+        width: 40px;
+    }
+
+    .navbar {
+
+        width: 100%;
+        min-width: 750px;
+
+        background: #e0e0e0;
+    }
+
+    .ul-box {
+
+        position: relative;
+        display: inline-block;
+
+        list-style: none;
+
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .logo {
+
+        height: 40px;
+        width: 200px;
+
+        padding: 15px 10px;
+    }
+}
+@media screen and (max-width : 768px) {
+
+    .body {
+
+        width: 100%;
+        min-width: 0px;
+        max-width: 750px;
+    }
+
+    aside {
+
+        z-index: 1;
+    }
+
+    .about {
+
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .aside-btn-car,
+    .aside-btn-login {
+
+        display: none;
+    }
+
+    .navbar {
+
+        text-align: inherit;
+
+        width: 100%;
+        min-width: 0px;
+        max-width: 750px;
+    }
+
+    .dropdown {
+
+        display: none;
+    }
+
+    .ul-box {
+
+        width: 100%;
+    }
+
+    .li-box {
+
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .dropdown.logo-box {
+
+        display: inline-block;
+    }
+
+    .menu-box {
+
+        display: inline-block;
+        position: absolute;
+    }
+
+    .menu-btn {
+
+        display: inline-block;
+
+        height: 50px;
+        width: 50px;
+
+        margin: 10px;
+
+        border-radius: 10px;
+
+        background-image: url(../img/icon/icon-menu.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        opacity: 0.5;
+    }
+
+    .mobile-ul {
+
+        display: block;
+        position: fixed;
+
+        overflow: hidden;
+
+        top: 0px;
+        left: 0px;
+
+        height: 100%;
+        width: 0%;
+
+        padding: 0px;
+
+        background: rgba(256, 256, 256, 0.9);
+
+        text-align: center;
+
+        transition: 0.3s;
+        z-index: 1;
+    }
+
+    .mobile-li {
+
+        display: block;
+
+        width: 50%;
+        margin: 0 auto;
+
+        font-size: 2rem;
+    }
+
+    .mobile-dropdown {
+
+        display: block;
+        color: #6a6a6a;
+
+        width: 100%;
+
+        line-height: 50px;
+    }
+
+    .mobile-dropdown::before {
+
+        content: "";
+        display: block;
+        position: absolute;
+
+        left: 25%;
+
+        height: 1px;
+        width: 50%;
+
+        background: #6a6a6a;
+
+        opacity: 0.3;
+    }
+
+    .mobile-dropdown-content {
+
+        display: block;
+        overflow: hidden;
+
+        padding: 0px;
+    }
+
+    .mobile-dropdown-content .content {
+
+        display: block;
+
+        font-size: 1.5rem;
+        color: #6a6a6a;
+
+        line-height: 40px;
+    }
+
+    .close-menu {
+
+        display: block;
+
+        height: 50px;
+        width: 50px;
+
+        margin: 10px;
+
+        border-radius: 50%;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+
+        background: transparent;
+    }
+
+    .close-menu::after {
+
+        content: "X";
+        display: block;
+        position: relative;
+
+        font-size: 20px;
+
+        color: rgba(0, 0, 0, 0.5);
+    }
+}
