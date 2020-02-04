@@ -465,7 +465,7 @@ aside {
 
     aside {
 
-        z-index: 1;
+        z-index: 3;
     }
 
     .about {
@@ -659,6 +659,11 @@ aside {
         padding: 20px 0;
 
         text-align: center;
+    }
+    
+    .footer .group-box .group {
+
+        margin: 0 5px;
     }
 
     .footer .group-box .group img {
