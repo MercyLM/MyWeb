@@ -1174,7 +1174,7 @@ main {
 
         height: auto;
 
-        z-index: 1;
+        z-index: 2;
     }
 
     .slider-box .item-list > .item {
@@ -1258,6 +1258,7 @@ main {
     .title-about {
 
         font-size: 6rem;
+        letter-spacing: 0.5rem;
 
     }
 
@@ -1340,11 +1341,13 @@ main {
         position: absolute;
 
         top: calc(8rem + 2.5rem + 50px);
+        
+        z-index: 2;
     }
 
     .news-box .item-list .card-1 {
 
-        top: 0px;
+        top: 10px;
         margin: 0 auto;
     }
 
@@ -1537,9 +1540,14 @@ main {
 
         width: 50%;
     }
+    
+    .title-about {
+        
+        padding: 18px 0 18px 10%;
+    }
 
     .title-about::before {
-
+        
         top: -50px;
         height: 75px
     }
@@ -1556,7 +1564,7 @@ main {
 
         left: 50%;
 
-        top: 64px;
+        top: 32px;
     }
 
     .about-box-bg {
