@@ -303,19 +303,22 @@ aside {
 
     height: 150px;
     width: 100%;
+    
+    text-align: left;
 
     background: rgb(240, 231, 225);
-    
+
     z-index: 2;
 }
 
 .footer .group-box {
 
-    display: block;
-    position: absolute;
+    position: relative;
+    display: inline-block;
 
     top: 50%;
     transform: translateY(-50%);
+    
     left: 5%;
 }
 
@@ -324,14 +327,13 @@ aside {
     position: relative;
     display: inline-block;
 
-    height: 50px;
-    line-height: 50px;
+    height: 40px;
+    line-height: 40px;
     width: 150px;
-    
-    margin: 0 1%;
 
     border: 1px solid rgba(150, 89, 28, 0.5);
     border-radius: 3px;
+    box-sizing: border-box;
 
     text-align: center;
 
@@ -344,12 +346,21 @@ aside {
     transition: 0.5s;
 }
 
-.footer .group:hover{
+.footer .group span {
+
+    text-align: center;
+
+    color: rgba(150, 89, 28, 0.5);
+    
+    transition: 0.5s;
+}
+
+.footer .group:hover {
 
     border: 1px solid rgba(150, 89, 28, 1);
 }
 
-.footer .group:hover span{
+.footer .group:hover span {
 
     color: rgba(150, 89, 28, 1);
 }
@@ -372,11 +383,13 @@ aside {
 .footer p {
 
     display: inline-block;
-    position: absolute;
-
+    position: relative;
+    
     top: 50%;
     transform: translateY(-50%);
-    right: 3%;
+    left: 5%;
+    
+    line-height: 40px;
 
     font-weight: bold;
     font-size: 1rem;
@@ -630,37 +643,36 @@ aside {
 
         color: rgba(0, 0, 0, 0.5);
     }
-    
+
     .footer {
-        
+
         height: 100px;
     }
 
     .footer .group-box {
 
-        position: static;
-
         top: 0;
         transform: translateY(0);
-        left: 0;
+        left: 50%;
+        transform: translateX(-50%);
 
         padding: 20px 0;
 
         text-align: center;
     }
-    
+
     .footer .group-box .group img {
-     
+
         display: inline-block;
     }
-    
+
     .footer .group-box .group span {
-     
+
         display: inline-block;
         position: absolute;
-        
+
         left: 30px;
-        
+
         color: rgba(150, 89, 28, 0.5);
     }
 

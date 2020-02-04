@@ -271,15 +271,13 @@ main {
     display: block;
     position: relative;
 
-    height: 630px;
+/*    height: 630px;*/
     width: 100%;
 
     left: 0px;
     top: 0px;
 
     background: rgb(250, 247, 247);
-
-    overflow: hidden;
 }
 
 .news-box > .box-bg {
@@ -321,24 +319,29 @@ main {
 
 .news-box .box-bg > .bg {
 
-    position: relative;
+    position: absolute;
 
     height: 160%;
+    width: 100%;
 
+    top: 0px;
     left: 0px;
 
     background: url("../img/slider_img2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    
+    z-index: 0;
 }
 
 .news-box .title {
 
-    position: absolute;
+    position: relative;
 
-    top: 30px;
-    right: 15%;
-
+    padding: 10px 15%;
+    
+    text-align: right;
+    
     font-size: 2.5rem;
     color: rgba(150, 89, 28, 1);
 }
@@ -348,7 +351,7 @@ main {
     display: block;
     position: absolute;
 
-    top: 0px;
+    top: 100px;
     left: 0px;
 
     height: 100%;
@@ -367,7 +370,7 @@ main {
 
     margin: 0px 2.5%;
 
-    top: 0px;
+    top: 10px;
 
     height: 350px;
     width: 300px;
@@ -384,7 +387,7 @@ main {
 
     margin: 0px 2.5%;
 
-    top: 60px;
+    top: 70px;
 
     height: 350px;
     width: 300px;
@@ -401,7 +404,7 @@ main {
 
     margin: 0px 2.5%;
 
-    top: 120px;
+    top: 130px;
 
     height: 350px;
     width: 300px;
@@ -510,7 +513,9 @@ main {
     position: relative;
     display: block;
 
-    top: -50px;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
 
     width: 150px;
 
@@ -521,6 +526,8 @@ main {
     background: rgb(150, 89, 28, 0.75);
 
     letter-spacing: 0.25rem;
+    
+    z-index: 3;
 }
 
 .title-store {
@@ -1340,14 +1347,15 @@ main {
 
         position: absolute;
 
-        top: calc(8rem + 2.5rem + 50px);
+        top: auto;
+        bottom: 0px;
         
         z-index: 2;
     }
 
     .news-box .item-list .card-1 {
 
-        top: 10px;
+        top: 150px;
         margin: 0 auto;
     }
 
@@ -1361,9 +1369,11 @@ main {
         position: absolute;
 
         top: auto;
-        bottom: 0px;
+        bottom: -25px;
         left: 50%;
         transform: translateX(-50%);
+        
+        z-index: 3;
     }
 
     .shop-box::before {
