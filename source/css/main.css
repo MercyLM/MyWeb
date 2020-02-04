@@ -336,12 +336,12 @@ aside {
     font-weight: bold;
 
     color: rgba(150, 89, 28, 0.5);
-    
+
     transition: 0.5s;
 }
 
 .footer .group:hover {
-    
+
     border: 1px solid rgba(150, 89, 28, 1);
     color: rgba(150, 89, 28, 1);
 }
@@ -361,7 +361,7 @@ aside {
     opacity: 0.5;
 }
 
-.footer span {
+.footer p {
 
     display: inline-block;
     position: absolute;
@@ -413,7 +413,7 @@ aside {
         padding: 0px;
         margin: 0px;
     }
-    
+
     .li-box a {
 
         width: 100px;
@@ -431,9 +431,10 @@ aside {
 @media screen and (max-width : 768px) {
 
     html {
-        
+
         font-size: 9px;
     }
+
     .body {
 
         width: 100%;
@@ -492,7 +493,7 @@ aside {
 
         display: inline-block;
         position: absolute;
-        
+
         right: 15px;
     }
 
@@ -535,7 +536,7 @@ aside {
 
         transition: 0.3s;
         z-index: 1;
-        
+
         white-space: nowrap;
     }
 
@@ -599,7 +600,7 @@ aside {
         display: block;
 
         right: 0px;
-        
+
         height: 50px;
         width: 50px;
 
@@ -621,28 +622,45 @@ aside {
 
         color: rgba(0, 0, 0, 0.5);
     }
-}
-
-@media screen and (max-width : 575px) {
     
+    .footer {
+        
+        height: 100px;
+    }
+
     .footer .group-box {
-        
+
         position: static;
-        
+
         top: 0;
         transform: translateY(0);
         left: 0;
-        
+
         padding: 20px 0;
-        
+
         text-align: center;
     }
     
-    .footer span {
+    .footer .group-box .group img {
+     
+        display: inline-block;
+    }
+    
+    .footer .group-box .group span {
+     
+        display: inline-block;
+        position: absolute;
         
+        left: 30px;
+        
+        color: rgba(150, 89, 28, 0.5);
+    }
+
+    .footer p {
+
         display: block;
         position: static;
-        
+
         text-align: center;
     }
 }
