@@ -1,8 +1,8 @@
 $(function () {
 
-    $("#aside").load("../source/aside.html");
-    $("#footer").load("../source/footer.html");
-    $("#nav").load("../source/navbar.html", function (responseTxt, statusTxt, xhr) {
+    $("#aside").load("./source/aside.html");
+    $("#footer").load("./source/footer.html");
+    $("#nav").load("./source/navbar.html", function (responseTxt, statusTxt, xhr) {
 
         if (statusTxt == "success") {
 
