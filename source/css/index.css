@@ -261,6 +261,7 @@ main {
 
     color: rgba(150, 89, 28, 0.1);
     font-weight: bold;
+    font-size: 8rem;
 
     background: rgb(250, 247, 247);
 }
@@ -514,6 +515,8 @@ main {
 
     left: 50%;
     transform: translateX(-50%);
+    
+    bottom: 25px;
 
     width: 150px;
 
@@ -1077,7 +1080,7 @@ main {
 
         margin: 0px 2.5%;
 
-        top: 20px;
+        top: 10px;
 
         height: 350px;
         width: 275px;
@@ -1092,7 +1095,7 @@ main {
 
         margin: 0px 2.5%;
 
-        top: 80px;
+        top: 60px;
 
         height: 350px;
         width: 275px;
@@ -1275,6 +1278,8 @@ main {
         padding: 0;
 
         text-align: center;
+        
+        font-size: 4rem;
     }
 
     .news-box .title-news::before {
