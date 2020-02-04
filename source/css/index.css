@@ -512,7 +512,6 @@ main {
     position: relative;
     display: block;
 
-    top: -25px;
     left: 50%;
     transform: translateX(-50%);
 
@@ -1313,7 +1312,7 @@ main {
 
     .news-box {
 
-        height: 590px;
+        height: 540px;
     }
 
     .news-box .title {
@@ -1331,7 +1330,7 @@ main {
 
     .news-box > .box-bg {
 
-        top: 125px;
+        top: 100px;
 
         height: 350px;
 
@@ -1347,7 +1346,7 @@ main {
 
         position: absolute;
 
-        top: auto;
+        top: -50px;
         bottom: 0px;
 
         z-index: 2;
@@ -1368,7 +1367,6 @@ main {
 
         position: absolute;
 
-        top: auto;
         bottom: -25px;
         left: 50%;
         transform: translateX(-50%);
