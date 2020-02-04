@@ -761,6 +761,13 @@ main {
 .shop-box .box-item > .item > a {
 
     display: block;
+    
+    transition: 0.5s;
+}
+
+.shop-box .box-item > .item > a:hover {
+    
+    transform: translateY(-10px);
 }
 
 .shop-box .box-item > .card-1 {

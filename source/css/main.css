@@ -387,6 +387,13 @@ aside {
     width: 25px;
 
     opacity: 0.5;
+    
+    transition: 0.5s;
+}
+
+.footer .group:hover .icon {
+
+    opacity: 1;
 }
 
 .footer p {
