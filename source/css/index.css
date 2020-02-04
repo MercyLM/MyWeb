@@ -1265,7 +1265,7 @@ main {
     .title-class,
     .title-about {
 
-        font-size: 6rem;
+        font-size: 4rem;
         letter-spacing: 0.5rem;
 
     }
@@ -1395,7 +1395,7 @@ main {
         left: 50%;
         transform: translateX(-50%);
 
-        font-size: 6rem;
+        font-size: 4rem;
         letter-spacing: 0.25rem;
     }
 
