@@ -212,9 +212,9 @@ main {
 .btn-more:hover,
 .slider-box .box .btn-more:hover,
 .news-box .btn-more:hover,
-.title-box .btn-more:hover,
-.class-box .box-title .btn-more:hover,
-.about-box .box-title .btn-more:hover {
+.shop-box .btn-more:hover,
+.class-box .btn-more:hover,
+.about-box .btn-more:hover {
 
     color: rgb(150, 89, 28);
 
@@ -1504,7 +1504,7 @@ main {
 
     .title-class {
 
-        padding: 0 10% 0 0;
+        padding: 15px 10% 10px 0;
 
         text-align: center;
     }
@@ -1587,7 +1587,7 @@ main {
 
     .title-about {
 
-        padding: 18px 0 18px 15px;
+        padding: 18px 0 18px 25px;
     }
 
     .title-about::before {
