@@ -51,14 +51,16 @@ html {
 /*reset end*/
 /*html*/
 
-.news .li-box:nth-child(2) .dropdown {
+.news .li-box:nth-child(2) .dropdown,
+.newShop .li-box:nth-child(3) .dropdown {
 
 
     color: rgb(150, 89, 28);
     opacity: 1;
 }
 
-.news .li-box:nth-child(2)::after {
+.news .li-box:nth-child(2)::after,
+.newShop .li-box:nth-child(3)::after {
 
 
     content: "";

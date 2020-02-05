@@ -1,0 +1,75 @@
+@import "../css/main.css";
+
+/*header*/
+.newShop {
+
+    background: rgb(250, 247, 247);
+}
+
+.slider-box {
+
+    position: relative;
+
+    height: 570px;
+    width: 100%;
+}
+
+.slider {
+
+    display: inline-block;
+
+    margin-top: 70px;
+    padding: 0;
+
+    white-space: nowrap;
+    overflow: hidden;
+
+    width: 100%;
+}
+
+.slider-img {
+
+    display: inline-block;
+    
+    height: 500px;
+    width: 80%;
+
+    background: black;
+}
+
+.slider-img._1 {
+
+    transform: translateX(-92.5%);
+}
+
+.slider-img._2 {
+
+    transform: translateX(-87.5%);
+}
+
+.slider-img._3 {
+
+    transform: translateX(-82.5%);
+}
+
+.slider-img._1::before,
+.slider-img._3::before {
+
+    content: "";
+    position: absolute;
+    
+    height: 100%;
+    width: 100%;
+    
+    background: rgb(150, 89, 28);
+    
+    opacity: 0.5;
+}
+
+.slider-img img {
+
+    height: 100%;
+    width: 100%;
+}
+
+/*header end*/
