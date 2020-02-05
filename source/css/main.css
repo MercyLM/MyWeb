@@ -109,6 +109,24 @@ body {
     vertical-align: top;
 }
 
+.li-box:hover::after {
+    
+    content: "";
+    position: absolute;
+    
+    left: 0px;
+    bottom: 0px;
+    
+    height: 2px;
+    width: 0%;
+    
+    background: rgba(150, 89, 28, 0.5);
+    
+    animation-name: titleInline;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
 .li-box a {
 
     line-height: 70px;
@@ -708,5 +726,17 @@ aside {
         position: static;
 
         text-align: center;
+    }
+}
+
+@keyframes titleInline {
+    
+    from {
+        
+        width: 0%;
+    }
+    to {
+        
+        width: 100%;
     }
 }
