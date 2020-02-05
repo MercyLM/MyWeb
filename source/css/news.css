@@ -1,0 +1,397 @@
+@import "../css/main.css";
+
+/*header*/
+.header-bg {
+
+    position: relative;
+
+    min-height: 570px;
+    width: 100%;
+
+    text-align: center;
+
+    background-image: url(../img/slider_2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-bg::before {
+
+    content: "";
+    position: absolute;
+
+    top: 0px;
+    left: 0px;
+
+    height: 100%;
+    width: 100%;
+
+    background: black;
+    opacity: 0.2;
+}
+
+.news {
+    
+    background: rgb(250, 247, 247);
+}
+
+.news-box {
+
+    display: flex;
+    position: absolute;
+
+    flex-direction: column;
+
+    top: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    padding: 2.5% 5%;
+
+    height: 90%;
+    width: 90%;
+
+    border-radius: 5px;
+
+    background: rgba(150, 89, 28, 0.8);
+
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+
+    z-index: 1;
+}
+
+
+.title,
+.small-title {
+
+    margin: 1.5rem 0;
+
+    text-align: left;
+
+    font-family: "華康中特圓體";
+
+    color: rgb(250, 247, 247);
+}
+
+.title {
+
+    font-size: 2.5rem;
+}
+
+.small-title {
+
+    font-size: 1.5rem;
+    letter-spacing: 0.25rem;
+}
+
+.list {
+
+    position: relative;
+
+    flex-grow: 1;
+    width: 100%;
+}
+
+.list::before {
+
+    content: "";
+    position: absolute;
+
+    top: 0px;
+    left: -10%;
+
+    height: 1px;
+    width: 10%;
+
+    background: rgb(250, 247, 247);
+
+    opacity: 0.5;
+}
+
+.list ul {
+
+    display: block;
+
+    padding: 0;
+}
+
+.list ul li {
+
+    text-align: left;
+
+    font-size: 1.5rem;
+}
+
+.list ul li {
+
+    display: block;
+
+    margin: 1rem 0;
+}
+
+.list ul li:hover {
+
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+    background: rgb(150, 89, 28);
+}
+
+.list ul li p,
+.list ul li p span {
+
+    color: rgb(250, 247, 247);
+}
+
+.list ul li p {
+
+    display: block;
+
+    letter-spacing: 0.25rem;
+}
+
+.list ul li p span {
+
+    display: inline-block;
+    height: 3.5rem;
+    line-height: 3.5rem;
+    width: 7.5%;
+
+    text-align: center;
+
+    border: 1px solid rgb(250, 247, 247);
+    border-radius: 10px;
+}
+
+.list img {
+
+    position: absolute;
+
+    top: 0px;
+    right: -10%;
+
+    height: 200px;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/*header end*/
+/*main*/
+main {
+
+    position: relative;
+    background: rgba(230, 215, 203);
+}
+
+.show-box {
+
+    position: relative;
+
+    top: 50px;
+
+    height: 500px;
+
+    background: rgb(250, 247, 247);
+}
+
+.show {
+
+    position: relative;
+
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    height: 400px;
+    width: 75%;
+
+    background: rgba(150, 89, 28, 0.2);
+}
+
+.show::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0px;
+    left: 0px;
+
+    height: 150px;
+    width: 40%;
+
+    background: rgb(250, 247, 247);
+}
+
+.show::after {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0px;
+    right: 0px;
+
+    height: 150px;
+    width: 40%;
+
+    background: rgb(250, 247, 247);
+}
+
+.show img {
+
+    position: absolute;
+
+    top: 50%;
+    transform: translateY(-50%);
+    left: -10%;
+
+    width: 35%;
+}
+
+.content {
+
+    position: absolute;
+
+    right: 0px;
+    bottom: 0px;
+
+    height: 250px;
+    width: 70%;
+}
+
+.content p {
+
+    min-height: 4rem;
+    line-height: 4rem;
+
+    letter-spacing: 0.25rem;
+
+    color: rgba(150, 89, 28, 0.9);
+}
+
+.content .content-time {
+
+    font-family: "華康中特圓體";
+    font-size: 2rem;
+    letter-spacing: 0.5rem;
+}
+
+.content .content-title {
+
+    font-family: "華康中特圓體";
+    font-size: 2rem;
+}
+
+.content .content-text {
+
+    font-size: 1.5rem;
+}
+
+.show a {
+
+    position: absolute;
+
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10px;
+
+    height: 40px;
+    line-height: 40px;
+    width: 125px;
+
+    text-align: center;
+
+    font-family: "華康中特圓體";
+    font-size: 1.5rem;
+    letter-spacing: 0.25rem;
+
+    color: rgba(150, 89, 28, 0.5);
+
+    border: 1px solid rgba(150, 89, 28, 0.5);
+    border-radius: 2px;
+
+    transition: 0.5s;
+}
+
+.content a:hover {
+
+    color: rgba(150, 89, 28, 1);
+
+    border: 1px solid rgba(150, 89, 28, 1);
+}
+
+/*main end*/
+@media screen and (max-width : 768px) {
+
+    .list img {
+
+        display: none;
+    }
+
+    .small-title {
+
+        font-size: 2rem;
+    }
+
+    .list ul li p {
+
+        margin-bottom: 20px;
+
+        font-family: "華康中特圓體";
+        font-size: 2rem;
+
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    .list ul li p span {
+
+        display: block;
+        width: 20%;
+
+        margin-bottom: 20px;
+    }
+    
+    .show-box {
+
+        height: auto;
+    }
+    
+    .show {
+
+        height: auto;
+        
+        margin-bottom: 100px;
+    }
+
+    .show img {
+
+        position: relative;
+        top: 0px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        padding: 75px 0 0 0;
+        width: 80%;
+
+        z-index: 2;
+    }
+
+    .content {
+
+        position: relative;
+/*        top: 100px;*/
+        left: 50%;
+        transform: translateX(-50%);
+
+/*        padding: 0 0 150px 0;*/
+        
+        height: 300px;
+        width: 90%;
+
+        text-align: center;
+        
+        box-sizing: border-box;
+    }
+}

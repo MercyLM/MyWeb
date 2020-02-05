@@ -1498,21 +1498,6 @@ main {
         width: 33.3%;
     }
 
-    .footer .group {
-
-        height: 35px;
-        line-height: 35px;
-        width: 100px;
-    }
-
-    .footer .group .icon {
-
-        height: 20px;
-        width: 20px;
-
-        left: 5px;
-    }
-
     .title-box .text {
 
         padding: 0 10%;

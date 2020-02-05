@@ -35,6 +35,14 @@ function scrollFunction() {
         topbtn.classList.remove("show");
 
     }
+    
+    //檢測是不是首頁
+    if(!document.getElementById("index")){
+        
+        navbar.classList.add("sticky");
+        
+        console.log("不是首頁，所以navbar要flex在上面");
+    }
 
     //監聽滾動
     window.onscroll = function () {
@@ -75,7 +83,7 @@ function myFunction(navbar, topbtn) {
 
     if (document.getElementById("index")) {
 
-        //        console.log("這是首頁");
+        console.log("這是首頁");
 
         if (document.body.scrollTop > 550 || document.documentElement.scrollTop > 550) {
 
@@ -89,8 +97,8 @@ function myFunction(navbar, topbtn) {
 
         }
     } else {
-
-        //        console.log("這不是首頁");
+        
+//        console.log("這不是首頁");
     }
 
 }
