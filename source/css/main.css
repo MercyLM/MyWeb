@@ -52,7 +52,8 @@ html {
 /*html*/
 
 .news .li-box:nth-child(2) .dropdown,
-.newShop .li-box:nth-child(3) .dropdown {
+.newShop .li-box:nth-child(3) .dropdown,
+.about .li-box:nth-child(5) .dropdown {
 
 
     color: rgb(150, 89, 28);
@@ -60,7 +61,8 @@ html {
 }
 
 .news .li-box:nth-child(2)::after,
-.newShop .li-box:nth-child(3)::after {
+.newShop .li-box:nth-child(3)::after,
+.about .li-box:nth-child(5)::after {
 
 
     content: "";
@@ -528,11 +530,13 @@ aside {
         z-index: 3;
     }
 
+/*
     .about {
 
         left: 50%;
         transform: translate(-50%, -50%);
     }
+*/
 
     .aside-btn-car,
     .aside-btn-login {
