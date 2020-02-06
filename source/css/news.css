@@ -250,7 +250,7 @@ main {
     width: 35%;
 }
 
-.content {
+.show > .content {
 
     position: absolute;
 
@@ -378,7 +378,7 @@ main {
         z-index: 2;
     }
 
-    .content {
+    .show > .content {
 
         position: relative;
 /*        top: 100px;*/
