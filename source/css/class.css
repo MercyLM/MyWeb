@@ -1,0 +1,293 @@
+@import "./main.css";
+
+.class {
+    
+    background: rgb(250, 247, 247);
+}
+
+header {
+
+    background: rgba(133, 164, 167, 0.3);
+}
+
+header .img {
+
+    position: relative;
+    margin: 70px auto 0 auto;
+
+    height: 500px;
+    width: 90%;
+    
+    transform: translateY(70px);
+    
+    background-image: url("../img/img_class_2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+header .img::after {
+
+    content: "";
+    display: block;
+    
+    height: 100%;
+    
+    border: 30px solid rgba(250, 247, 247, 1);
+    
+    opacity: 0.3;
+    
+    box-sizing: border-box;
+}
+
+header .img > .title {
+    
+    position: absolute;
+    
+    top: 50%;
+    transform: translateY(-50%);
+    left: 30%;
+    
+    font-family: "華康中特圓體";
+    font-size: 3rem;
+    
+    color: rgb(250, 247, 247);
+}
+
+.page-top,
+.page-center {
+    
+    position: relative;
+    height: 400px;
+    
+    text-align: center;
+}
+
+.page-top {
+    
+    margin-top: 100px;
+    
+    background: rgb(240, 231, 225);
+}
+
+.page-bottom {
+    
+    position: relative;
+    
+    text-align: center;
+    
+    background: rgb(240, 231, 225);
+    
+    overflow: hidden;
+}
+
+.page-center,
+.page-bottom,
+.footer {
+    
+    box-shadow: 0px -2px 5px rgb(0, 0, 0, 0.5);
+}
+
+.page-bottom {
+    
+    height: 50px;
+}
+
+.page-top > .title,
+.page-center > .title {
+    
+    text-align: center;
+    
+    line-height: 5.5rem;
+    
+    font-family: "華康中特圓體";
+    font-size: 2.5rem;
+    
+    color: rgba(150, 89, 28, 0.8);
+}
+
+.page-top::before,
+.page-center > .title::before {
+    
+    position: absolute;
+    
+    content: "";
+    display: block;
+    
+    top: 2.75rem;
+    left: 5%;
+    
+    height: 1px;
+    width: 35%;
+    
+    background: rgb(150, 89, 28, 0.5);
+}
+
+.page-top::after,
+.page-center > .title::after {
+    
+    position: absolute;
+    
+    content: "";
+    display: block;
+    
+    top: 2.75rem;
+    right: 5%;
+    
+    height: 1px;
+    width: 35%;
+    
+    background: rgb(150, 89, 28, 0.5);
+}
+
+.card {
+    
+    display: inline-flex;
+    
+    height: calc(100% - 5.5rem);
+    width: 90%;
+    
+    align-items: flex-end;
+    
+    overflow: hidden;
+}
+
+.card .card-left,
+.card .card-center,
+.card .card-right {
+    
+    
+    flex-grow: 1;
+    
+    transform: translateY(80px);
+    
+    height: 100%;
+    width: 33.3%;
+    
+    margin: 0 5%;
+    
+    background: rgb(250, 247, 247);
+    
+    box-sizing: border-box;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+    
+    overflow: hidden;
+    
+    transition: 0.5s;
+}
+
+.card .card-left:hover,
+.card .card-center:hover,
+.card .card-right:hover {
+    
+    transform: translateY(0px);
+}
+
+.card .card-left img,
+.card .card-center img,
+.card .card-right img{
+    
+    width: 100%;
+    min-width: 300px;
+    
+    transform: translateY(-10px);
+}
+
+.card .card-left .name,
+.card .card-center .name,
+.card .card-right .name {
+    
+    margin: 10px 0;
+    
+    font-size: 2rem;
+    
+    color: rgba(150, 89, 28, 0.8);
+}
+
+.card .card-left .date,
+.card .card-center .date,
+.card .card-right .date {
+    
+    margin: 10px 0;
+    
+    font-size: 1.5rem;
+    letter-spacing: 0.25rem;
+    
+    color: rgba(150, 89, 28, 0.8);
+}
+
+.card .card-left .time,
+.card .card-center .time,
+.card .card-right .time {
+    
+    margin: 10px 0;
+    
+    font-size: 1.5rem;
+    letter-spacing: 0.25rem;
+    
+    color: rgba(150, 89, 28, 0.8);
+}
+
+.chang_page {
+    
+    height: 50px;
+    width: 40px;
+    
+    border: 0px;
+    
+    background-color: transparent;
+    background-image: url("../img/icon/icon_top.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+@media screen and (max-width : 1200px) {
+    
+    .card .card-left, 
+    .card .card-center, 
+    .card .card-right {
+        
+        margin: 0 2%;
+    }
+}
+
+@media screen and (max-width : 768px) {
+    
+    header .img {
+        
+        height: 300px;
+    }
+    
+    .page-top::before, 
+    .page-center > .title::before {
+        
+        width: 25%;
+    }
+    
+    .page-top::after, 
+    .page-center > .title::after {
+        
+        width: 25%;
+    }
+    
+    .card .card-left, 
+    .card .card-center, 
+    .card .card-right {
+        
+        transform: translateY(90px);
+    }
+    
+    .card .card-right {
+        
+        display: none;
+    }
+}
+
+@media screen and (max-width : 400px) {
+    
+    .card .card-center {
+        
+        display: none;
+    }
+}
