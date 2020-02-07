@@ -700,8 +700,8 @@ main {
 
     position: absolute;
 
-    bottom: 70px;
-    left: 15%;
+    bottom: -25px;
+    left: 50%;
     transform: translateX(-50%);
 
     margin: 0;
@@ -1007,6 +1007,7 @@ main {
 .about-box .box-item img {
 
     width: 90%;
+    max-width: 400px;
 }
 
 .about-box .img img {
@@ -1410,6 +1411,7 @@ main {
 
     .shop-box .title-box {
 
+        position: static;
         height: calc(100% - 50px);
         width: 49%;
     }
@@ -1545,6 +1547,11 @@ main {
     .class-box .box-item {
 
         width: 50%;
+    }
+    
+    .class-box .box-item img {
+        
+        width: 80%;
     }
 
     .class-box .btn-more {
