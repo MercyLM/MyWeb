@@ -22,18 +22,20 @@ function scrollFunction() {
     var btn = document.getElementById("top-btn");
     var navbar = document.getElementById("nav");
     var topbtn = document.getElementById("top-btn");
+    var headerBG = document.getElementsByClassName("header-background")[0];
 
     //檢測scroll位置
     if (document.body.scrollTop > 550 || document.documentElement.scrollTop > 550) {
 
         navbar.classList.add("sticky");
         topbtn.classList.add("show");
+        headerBG.style.display = "block";
 
     } else {
 
         navbar.classList.remove("sticky");
         topbtn.classList.remove("show");
-
+        headerBG.style.display = "none";
     }
     
     //檢測是不是首頁
@@ -47,7 +49,7 @@ function scrollFunction() {
     //監聽滾動
     window.onscroll = function () {
 
-        myFunction(navbar, topbtn)
+        myFunction(navbar, topbtn, headerBG)
 
         var top = document.documentElement.scrollTop || document.body.scrollTop;
 
@@ -79,7 +81,7 @@ function scrollFunction() {
     };
 }
 
-function myFunction(navbar, topbtn) {
+function myFunction(navbar, topbtn, headerBG) {
 
     if (document.getElementById("index")) {
 
@@ -87,6 +89,7 @@ function myFunction(navbar, topbtn) {
 
         if (document.body.scrollTop > 550 || document.documentElement.scrollTop > 550) {
 
+            headerBG.style.display = "none";
             navbar.classList.add("sticky");
             topbtn.classList.add("show");
 
@@ -94,6 +97,7 @@ function myFunction(navbar, topbtn) {
 
             navbar.classList.remove("sticky");
             topbtn.classList.remove("show");
+            headerBG.style.display = "block";
 
         }
     } else {
