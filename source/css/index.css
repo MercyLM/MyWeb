@@ -9,6 +9,7 @@ header {
 
 .header-background {
 
+    display: block;
     position: fixed;
 
     height: 550px;

@@ -15,43 +15,43 @@ $(function () {
 
 function scrollFunction() {
 
-    //初始化
+    //初始狀態
     var timer = null;
     var timerChack = true;
-    //物件預載
-    var btn = document.getElementById("top-btn");
-    var navbar = document.getElementById("nav");
-    var topbtn = document.getElementById("top-btn");
-    var headerBG = document.getElementsByClassName("header-background")[0];
+    //物件宣告
+    var btn = $("#top-btn");
+    var navbar = $("#nav");
+    var topbtn = $("#top-btn");
+    var headerBG = $("#header-background");
 
     //檢測scroll位置
     if (document.body.scrollTop > 550 || document.documentElement.scrollTop > 550) {
 
-        navbar.classList.add("sticky");
-        topbtn.classList.add("show");
-        headerBG.style.display = "none";
+        navbar.addClass("sticky");
+        topbtn.addClass("show");
+        headerBG.css("display", "block");
 
     } else {
 
-        navbar.classList.remove("sticky");
-        topbtn.classList.remove("show");
-        headerBG.style.display = "block";
+        navbar.removeClass("sticky");
+        topbtn.removeClass("show");
+        headerBG.css("display", "none");
     }
     
     //檢測是不是首頁
-    if(!document.getElementById("index")){
+    if(!$(".index")){
         
-        navbar.classList.add("sticky");
+        navbar.addClass("sticky");
         
         console.log("不是首頁，所以navbar要flex在上面");
     }
 
-    //監聽滾動
+    //監聽scroll
     window.onscroll = function () {
 
         myFunction(navbar, topbtn, headerBG)
 
-        var top = document.documentElement.scrollTop || document.body.scrollTop;
+//        var top = document.documentElement.scrollTop || document.body.scrollTop;
 
         if (!timerChack) {
 
@@ -60,7 +60,7 @@ function scrollFunction() {
         }
         timerChack = false;
 
-        btn.onclick = function () {
+        btn.click(function () {
 
             timer = setInterval(function () {
 
@@ -77,27 +77,27 @@ function scrollFunction() {
                     clearInterval(timer);
                 }
             }, 30);
-        }
+        });
     };
 }
 
 function myFunction(navbar, topbtn, headerBG) {
 
-    if (document.getElementById("index")) {
+    if ($(".index")) {
 
         console.log("這是首頁");
 
         if (document.body.scrollTop > 550 || document.documentElement.scrollTop > 550) {
 
-            headerBG.style.display = "none";
-            navbar.classList.add("sticky");
-            topbtn.classList.add("show");
+            headerBG.css("display", "none");
+            navbar.addClass("sticky");
+            topbtn.addClass("show");
 
         } else {
 
-            navbar.classList.remove("sticky");
-            topbtn.classList.remove("show");
-            headerBG.style.display = "block";
+            navbar.removeClass("sticky");
+            topbtn.removeClass("show");
+            headerBG.css("display", "block");
 
         }
     } else {
@@ -109,22 +109,22 @@ function myFunction(navbar, topbtn, headerBG) {
 
 function menuFunction() {
 
-    var menu = document.getElementById("menu");
-    var menuBox = document.getElementById("menu-box");
-    var menuClose = document.getElementById("close-menu");
-    var aside = document.getElementById("aside");
+    var menu = $("#menu");
+    var menuBox = $("#menu-box");
+    var menuClose = $("#close-menu");
+    var aside = $("#aside");
 
-    menu.onclick = function () {
+    menu.click(function () {
 
-        menuBox.style.width = "100%";
-        menu.style.display = "none";
-        aside.style.zIndex = 0;
-    }
+        menuBox.css("width", "100%");
+        menu.css("display", "none");
+        aside.css("zIndex", "0");
+    });
 
-    menuClose.onclick = function () {
+    menuClose.click(function () {
 
-        menuBox.style.width = "0%";
-        menu.style.display = "inline-block";
-        aside.style.zIndex = 4;
-    }
+        menuBox.css("width", "0%");
+        menu.css("display", "inline-block");
+        aside.css("zIndex", "4");
+    });
 }
