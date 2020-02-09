@@ -1,0 +1,230 @@
+@import "./main.css";
+
+main {
+    
+    background: rgb(250, 247, 247);
+}
+
+.item-box {
+    
+    text-align: center;
+}
+
+.box-information {
+ 
+    display: inline-flex;
+    
+    margin-top: 140px;
+    padding: 40px 5%;
+    
+    width: 100%;
+    
+    background: rgb(256, 256, 256);
+    
+    box-sizing: border-box;
+}
+
+.img-box {
+    
+    width: 25%;
+}
+
+.img-box img {
+    
+    width: 100%;
+}
+
+.img-slider {
+    
+    display: inline-flex;
+}
+
+.img-slider img:nth-child(1) {
+    
+    
+    flex-grow: 1;
+    
+    width: 33%;
+    
+    margin-top: 10px;
+    padding: 0 5px 0 0;
+    
+    box-sizing: border-box;
+}
+
+.img-slider img:nth-child(2) {
+    
+    
+    flex-grow: 1;
+    
+    width: 33%;
+    
+    margin-top: 10px;
+    padding: 0 5px 0 5px;
+    
+    box-sizing: border-box;
+}
+
+.img-slider img:nth-child(3) {
+    
+    
+    flex-grow: 1;
+    
+    width: 33%;
+    
+    margin-top: 10px;
+    padding: 0 0 0 5px;
+    
+    box-sizing: border-box;
+}
+
+.box-content {
+    
+    display: inline-flex;
+    flex-direction: column;
+    flex-grow: 1;
+    
+    padding: 0 0 0 5%;
+
+    text-align: justify;
+}
+
+.box-content > .title {
+    
+    position: relative;
+    flex-grow: 1;
+    
+    font-size: 2.5rem;
+    color: rgb(150, 89, 28);
+}
+
+.box-content > .title > span {
+    
+    position: absolute;
+    
+    right: 0px;
+    
+    font-weight: bold;
+    letter-spacing: 0.25rem;
+    
+    color: rgb(150, 89, 28);
+}
+
+.box-content > .text {
+    
+    flex-grow: 8;
+    
+    font-size: 1.5rem;
+    line-height: 3rem;
+    letter-spacing: normal;
+    
+    color: rgb(150, 89, 28);
+}
+
+.box-content > .btn-add {
+    
+    border: 1px solid rgba(150, 89, 28, 0.8);
+    
+    height: 50px;
+    line-height: 50px;
+    width: 150px;
+    
+    font-size: 1.5rem;
+    font-weight: bold;
+    
+    color: rgba(150, 89, 28, 0.8);
+    
+    background: transparent;
+    
+    box-sizing: border-box;
+}
+
+.box-warning {
+    
+    background: rgb(256, 256, 256);
+}
+
+.box-warning > .title {
+    
+    line-height: 3rem;
+    
+    font-size: 2rem;
+    
+    color: rgba(150, 89, 28, 0.8);
+}
+
+.box-warning > .warning-content {
+    
+    display: inline-flex;
+    
+    padding: 0px 5%;
+    
+    width: 100%;
+    
+    box-sizing: border-box;
+}
+
+.box-warning > .warning-content .list{
+    
+    width: 70%;
+    
+    text-align: left;
+    
+    font-size: 1.5rem;
+    line-height: 3rem;
+    letter-spacing: normal;
+}
+
+.list p {
+    
+    color: rgba(150, 89, 28, 0.8);
+}
+
+.more-information {
+    
+    flex-grow: 1;
+    
+    padding: 0 2% 2% 2%;
+    
+    box-sizing: border-box;
+}
+
+.boder {
+    
+    height: 100%;
+    
+    padding: 10px 10px 0 10px;
+    
+    border: 1px dashed rgba(150, 89, 28, 0.8);
+}
+
+.boder .box-top p{
+    
+    text-align: left;
+    
+    line-height: 3rem;
+    font-size: 1.5rem;
+    
+    letter-spacing: normal;
+    
+    color: rgba(150, 89, 28, 0.8);
+}
+
+.boder .box-bottom{
+    
+    margin-top: 1rem;
+    
+    text-align: center;
+    
+    line-height: 3rem;
+    font-size: 1.5rem;
+    
+    letter-spacing: normal;
+}
+
+.boder .box-bottom a{
+    
+    text-decoration: underline;
+    
+    color: rgba(150, 89, 28, 0.8);
+}

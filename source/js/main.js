@@ -29,13 +29,13 @@ function scrollFunction() {
 
         navbar.classList.add("sticky");
         topbtn.classList.add("show");
-        headerBG.style.display = "none";
+//        headerBG.style.display = "none";
 
     } else {
 
         navbar.classList.remove("sticky");
         topbtn.classList.remove("show");
-        headerBG.style.display = "block";
+//        headerBG.style.display = "block";
     }
     
     //檢測是不是首頁
@@ -89,7 +89,7 @@ function myFunction(navbar, topbtn, headerBG) {
 
         if (document.body.scrollTop > 550 || document.documentElement.scrollTop > 550) {
 
-            headerBG.style.display = "none";
+//            headerBG.style.display = "none";
             navbar.classList.add("sticky");
             topbtn.classList.add("show");
 
@@ -97,7 +97,7 @@ function myFunction(navbar, topbtn, headerBG) {
 
             navbar.classList.remove("sticky");
             topbtn.classList.remove("show");
-            headerBG.style.display = "block";
+//            headerBG.style.display = "block";
 
         }
     } else {
