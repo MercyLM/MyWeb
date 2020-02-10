@@ -1,4 +1,16 @@
 /*reset*/
+@font-face{
+    
+    font-family: "華康中特圓體";
+    src : url("../font/font_1.TTC");
+}
+
+@font-face{
+    
+    font-family: "華康中圓體";
+    src : url("../font/font_2.TTC");
+}
+
 h1,
 h2,
 h3,
@@ -16,18 +28,6 @@ body {
     color: #6e6e6e;
 
     font-weight: normal;
-}
-
-@font-face{
-    
-    font-family: "華康中特圓體";
-    src : url("../font/font_1.TTC");
-}
-
-@font-face{
-    
-    font-family: "華康中圓體";
-    src : url("../font/font_2.TTC");
 }
 
 .body {

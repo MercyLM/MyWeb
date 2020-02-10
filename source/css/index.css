@@ -1298,7 +1298,7 @@ main {
 
     .news-box {
 
-        height: 525px;
+        height: 500px;
     }
 
     .news-box .title {
@@ -1428,7 +1428,7 @@ main {
 
     .shop-box .box-item {
 
-        width: 49%;
+        width: 45%;
     }
 
     .shop-box .box-item > .card-1 {
