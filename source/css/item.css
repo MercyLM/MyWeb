@@ -323,3 +323,51 @@ main {
     background-repeat: no-repeat;
     background-position: center;
 }
+
+@media screen and (max-width : 768px) {
+    
+    .box-information {
+        
+        display: flex;
+        flex-direction: column;
+        
+        margin-top: 70px;
+    }
+    
+    .img-box {
+        
+        margin: 0 auto;
+        
+        width: 90%;
+    }
+    
+    .box-content {
+        
+        margin-top: 2rem;
+    }
+    
+    .box-content > .text {
+        
+        padding: 10px 0;
+    }
+    
+    .box-content > .btn-add {
+        
+        margin: 0 auto;
+        
+        height: 35px;
+        line-height: 35px;
+        width: 100px;
+    }
+    
+    .box-warning > .warning-content {
+        
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .box-warning > .warning-content .list {
+        
+        margin: 2rem 0;
+    }
+}

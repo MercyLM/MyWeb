@@ -18,6 +18,18 @@ body {
     font-weight: normal;
 }
 
+@font-face{
+    
+    font-family: "華康中特圓體";
+    src : url("../font/font_1.TTC");
+}
+
+@font-face{
+    
+    font-family: "華康中圓體";
+    src : url("../font/font_2.TTC");
+}
+
 .body {
 
     background: rgba(250, 247, 247, 1);

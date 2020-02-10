@@ -84,7 +84,7 @@ main {
     display: inline-flex;
     flex-direction: column;
 
-    padding: 20px 20px;
+    padding: 20px 5%;
 
     background: rgba(150, 89, 28, 0.8);
 }
