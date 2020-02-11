@@ -27,9 +27,59 @@
 <body>
     <div class="shop">
         <header>
-            <nav id="nav" class="navbar"></nav>
+            <nav id="nav" class="navbar">
+                <!--max-width 768px-->
+                <ul id="menu-box" class="mobile-ul">
+                    <button id="close-menu" class="close-menu"></button>
+                    <li class="mobile-li">
+                        <a class="mobile-dropdown" href="./news.html">最新消息</a>
+                    </li>
+                    <li class="mobile-li">
+                        <a class="mobile-dropdown">商品介紹</a>
+                        <ul class="mobile-dropdown-content">
+                            <a href="./newShop.html" class="content">最新商品</a>
+                            <a href="./shop.html" class="content">商品目錄</a>
+                        </ul>
+                    </li>
+                    <li class="mobile-li">
+                        <a class="mobile-dropdown" href="./class.html">課程介紹</a>
+                    </li>
+                    <li class="mobile-li">
+                        <a class="mobile-dropdown" href="./about.html">關於我們</a>
+                    </li>
+                </ul>
+                <!--max-width 768px end-->
+                <ul class="ul-box">
+                    <li class="li-box">
+                        <a class="logo-box" href="index.html">
+                            <img class="logo" src="./Logo.png" alt="藝起來">
+                        </a>
+                    </li>
+                    <li class="li-box">
+                        <a class="dropdown" href="./news.html">最新消息</a>
+                    </li>
+                    <li class="li-box">
+                        <a class="dropdown">商品介紹</a>
+                        <ul class="dropdown-content">
+                            <a href="./newShop.html" class="content">最新商品</a>
+                            <a href="./shop.html" class="content">商品目錄</a>
+                        </ul>
+                    </li>
+                    <li class="li-box">
+                        <a class="dropdown" href="./class.html">課程介紹</a>
+                    </li>
+                    <li class="li-box">
+                        <a class="dropdown" href="./about.html">關於我們</a>
+                    </li>
+                    <li class="menu-box">
+                        <a id="menu" href="javascript:" class="menu-btn"></a>
+                    </li>
+                </ul>
+            </nav>
         </header>
-        <aside id="aside"></aside>
+        <aside id="aside">
+            <a href="javascript:" id="top-btn" class="aside-top-btn"></a>
+        </aside>
         <main>
             <div class="hot-item-box">
                 <p class="title">熱門商品</p>
@@ -79,8 +129,26 @@
                 </div>
             </div>
         </main>
-        <footer id="footer" class="footer"></footer>
+        <footer id="footer">
+            <div class="footer">
+                <div class="group-box">
+                    <a href="" class="group">
+                        <img class="icon" src="source/img/icon/fb_icon.png">
+                        <span>Facebook</span>
+                    </a>
+                    <a href="" class="group">
+                        <img class="icon" src="source/img/icon/ig_icon.png">
+                        <span>Instagram</span>
+                    </a>
+                    <a href="" class="group">
+                        <img class="icon" src="source/img/icon/tw_icon.png">
+                        <span>Twitter</span>
+                    </a>
+                </div>
+                <p>
+                    © 2020 All Right Reserved.
+                </p>
+            </div>
+        </footer>
     </div>
-</body>
-
-</html>
+</body></html>
