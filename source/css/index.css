@@ -174,11 +174,18 @@ main {
     width: 100%;
 
     white-space: nowrap;
+    letter-spacing: normal
+        ;
 
     animation-name: sliderAnima;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-duration: 5s;
+}
+
+.slider-box .item-list:hover {
+    
+    animation-play-state: paused;
 }
 
 .slider-box .item-list > .item {
@@ -190,6 +197,11 @@ main {
 
     height: 250px;
     width: 250px;
+}
+
+.slider-box .item-list > .item img {
+    
+    width: 100%;
 }
 
 .btn-more {
@@ -958,6 +970,7 @@ main {
 
     position: relative;
     display: flex;
+    justify-content: center;
     background: rgb(150, 89, 28, 0.1);
 
     height: 500px;
@@ -966,7 +979,7 @@ main {
 
 .about-box .box-item {
 
-    width: 33.33%;
+    width: 30%;
 }
 
 
@@ -1009,9 +1022,10 @@ main {
 
     position: relative;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
 
-    width: 30% transform: translateX(10%);
+    width: 30%;
+    transform: translateX(15%);
 }
 
 .about-box .box-item img {
@@ -1023,7 +1037,6 @@ main {
 .about-box .img img {
 
     width: 100%;
-    transform: translate(20%, 20%);
 }
 
 .about-box .box-title .text {
@@ -1171,7 +1184,8 @@ main {
 
         margin: 20px 0 0 0;
 
-        height: auto;
+        height: 200px;
+        width: 200px;
 
         z-index: 2;
 
