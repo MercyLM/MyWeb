@@ -147,6 +147,11 @@ body {
     vertical-align: top;
 }
 
+.li-box:nth-child(2) {
+
+    margin-left: 100px;
+}
+
 .li-box:hover .dropdown::after {
 
     content: "";

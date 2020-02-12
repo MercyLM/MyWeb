@@ -4,7 +4,7 @@
 header {
 
     margin-top: 70px;
-    
+
     height: 550px;
     width: 100%;
 }
@@ -70,17 +70,17 @@ header {
 }
 
 .header-text > h1 {
-    
+
     font-size: 5rem;
-    
+
     color: rgba(256, 256, 256, 1);
 }
 
 .header-text > h2 {
-    
+
     font-size: 4rem;
     letter-spacing: normal;
-    
+
     color: rgba(256, 256, 256, 1);
 }
 
@@ -115,6 +115,8 @@ main {
     padding: 50px 0px;
 
     background: rgb(250, 247, 247);
+
+    overflow: hidden;
 }
 
 .slider-box .box {
@@ -167,13 +169,16 @@ main {
     display: block;
 
     top: 50%;
-    transform: translateY(-50%);
 
     height: 250px;
     width: 100%;
 
-    overflow: hidden;
     white-space: nowrap;
+
+    animation-name: sliderAnima;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 5s;
 }
 
 .slider-box .item-list > .item {
@@ -343,7 +348,7 @@ main {
     z-index: 0;
 }
 
-.news-box .title {
+.news-box > .title {
 
     position: relative;
 
@@ -380,11 +385,10 @@ main {
 
     top: 10px;
 
-    height: 375px;
     width: 300px;
 
     background: rgba(150, 89, 28, 0.75);
-    
+
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
 
     transition: 0.5s;
@@ -399,11 +403,10 @@ main {
 
     top: 70px;
 
-    height: 375px;
     width: 300px;
 
     background: rgba(150, 89, 28, 0.75);
-    
+
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
 
     transition: 0.5s;
@@ -418,11 +421,10 @@ main {
 
     top: 130px;
 
-    height: 375px;
     width: 300px;
 
     background: rgba(150, 89, 28, 0.75);
-    
+
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
 
     transition: 0.5s;
@@ -472,6 +474,27 @@ main {
     color: rgb(250, 247, 247);
 }
 
+.news-box .item-list .card-1 .text,
+.news-box .item-list .card-2 .text,
+.news-box .item-list .card-3 .text {
+
+    position: relative;
+
+    padding: 10px 20px 20px 20px;
+
+    top: 0px;
+    left: 0px;
+
+    text-align: left;
+
+    font-family: "華康中特圓體";
+    font-size: 1.5rem;
+
+    color: rgb(250, 247, 247);
+
+    box-sizing: border-box;
+}
+
 .news-box .item-list .card-1 .title::before,
 .news-box .item-list .card-2 .title::before,
 .news-box .item-list .card-3 .title::before {
@@ -483,38 +506,18 @@ main {
     width: 25px;
 
     top: 37px;
-    left: -12.5px;
+    left: -35px;
 
     background: rgb(250, 247, 247);
-}
-
-.news-box .item-list .card-1 .title > span,
-.news-box .item-list .card-2 .title > span,
-.news-box .item-list .card-3 .title > span {
-
-    display: inline-block;
-
-    height: 35px;
-    line-height: 35px;
-    width: 75px;
-
-    border: 1px solid rgb(250, 247, 247);
-    border-radius: 5px;
-
-    text-align: center;
-
-    font-family: "華康中特圓體";
-
-    color: rgb(250, 247, 247);
-
-    letter-spacing: 0.25rem;
 }
 
 .news-box .item-list .card-1 h3,
 .news-box .item-list .card-2 h3,
 .news-box .item-list .card-3 h3 {
 
-    font-size: 1.75rem;
+    text-align: center;
+
+    font-size: 2rem;
 
     font-family: "華康中特圓體";
     font-weight: normal;
@@ -534,7 +537,7 @@ main {
     border: 0px;
 
     background: rgb(150, 89, 28, 0.5);
-    
+
     box-sizing: border-box;
 
     z-index: 3;
@@ -695,7 +698,7 @@ main {
     font-size: 1.5rem;
     letter-spacing: 0.25rem;
 
-    color: rgb(150, 89, 28);
+    color: rgba(150, 89, 28, 0.6);
 }
 
 .title-box img {
@@ -811,7 +814,7 @@ main {
     letter-spacing: 0.25rem;
     font-weight: normal;
 
-    color: rgb(150, 89, 28);
+    color: rgba(150, 89, 28, 0.6);
 }
 
 .class-box-bg {
@@ -905,7 +908,7 @@ main {
     font-size: 1.5rem;
     letter-spacing: 0.25rem;
 
-    color: rgb(150, 89, 28);
+    color: rgba(150, 89, 28, 0.6);
 }
 
 .class-box .btn-more {
@@ -984,9 +987,9 @@ main {
 }
 
 .about-box .box-title {
-    
+
     width: 33.33%;
-    
+
     padding: 0 0 0 3.33%;
 }
 
@@ -1007,10 +1010,8 @@ main {
     position: relative;
     display: flex;
     align-items: flex-end;
-    
-    width: 30%
-    
-    transform: translateX(10%);
+
+    width: 30% transform: translateX(10%);
 }
 
 .about-box .box-item img {
@@ -1036,7 +1037,7 @@ main {
     font-size: 1.5rem;
     letter-spacing: 0.25rem;
 
-    color: rgb(150, 89, 28);
+    color: rgba(150, 89, 28, 0.6);
 }
 
 .about-box .btn-more {
@@ -1167,13 +1168,17 @@ main {
     .slider-box .item-list {
 
         top: 0px;
-        transform: translateY(0);
 
         margin: 20px 0 0 0;
 
         height: auto;
 
         z-index: 2;
+
+        animation-name: sliderAnima-2;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-duration: 7s;
     }
 
     .slider-box .item-list > .item {
@@ -1236,7 +1241,7 @@ main {
         bottom: -20px;
         left: 50%;
         transform: translateX(-50%);
-        
+
         height: 40px;
         line-height: 40px;
         width: 125px;
@@ -1365,7 +1370,7 @@ main {
         bottom: -25px;
         left: 50%;
         transform: translateX(-50%);
-        
+
         height: 40px;
         line-height: 40px;
         width: 125px;
@@ -1391,15 +1396,15 @@ main {
         top: 0px;
         left: 0px;
         transform: translateX(0);
-        
+
         line-height: 50px;
 
         font-size: 4rem;
         letter-spacing: 0.25rem;
     }
-    
+
     .title-box .title {
-        
+
         padding: 25px 0 37.5px 0;
     }
 
@@ -1477,7 +1482,7 @@ main {
         transform: translateX(-50%);
 
         margin: 0;
-        
+
         height: 40px;
         line-height: 40px;
         width: 125px;
@@ -1570,9 +1575,9 @@ main {
 
         width: 50%;
     }
-    
+
     .class-box .box-item img {
-        
+
         width: 80%;
     }
 
@@ -1581,7 +1586,7 @@ main {
         bottom: -25px;
         left: 45%;
         transform: translateX(-50%);
-        
+
         height: 40px;
         line-height: 40px;
         width: 125px;
@@ -1621,7 +1626,7 @@ main {
     .about-box-bg {
 
         height: auto;
-        
+
         padding: 0 0 50px 0;
     }
 
@@ -1661,10 +1666,10 @@ main {
     .about-box .box-title .text {
 
         display: block;
-        
+
         margin: 0px auto;
         padding: 10px 0 30px 0;
-        
+
         width: 90%;
     }
 
@@ -1683,7 +1688,7 @@ main {
         bottom: -20px;
         left: 55%;
         transform: translateX(-50%);
-        
+
         height: 40px;
         line-height: 40px;
         width: 125px;
@@ -1736,6 +1741,32 @@ main {
     to {
 
         width: 150px;
+    }
+}
+
+@keyframes sliderAnima {
+
+    0% {
+
+        transform: translate(0, -50%);
+    }
+
+    100% {
+
+        transform: translate(-1020px, -50%);
+    }
+}
+
+@keyframes sliderAnima-2 {
+
+    0% {
+
+        transform: translate(0, 0);
+    }
+
+    100% {
+
+        transform: translate(-1020px, 0);
     }
 }
 
