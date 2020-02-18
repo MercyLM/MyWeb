@@ -270,6 +270,17 @@ main .slider .img-box img {
 
         box-shadow: none;
     }
+    
+    div.bar::after {
+        
+        height: 60px;
+        width: 120px;
+    }
+    
+    .text-box {
+        
+        margin: 50px auto 50px auto;
+    }
 
     .information {
 
@@ -300,5 +311,16 @@ main .slider .img-box img {
 
         line-height: 3.5rem;
         font-size: 2rem;
+    }
+    
+    main .slider {
+        
+        overflow: inherit;
+    }
+    
+    main .slider .img-box {
+        
+        padding-bottom: 50%;
+        width: 50%;
     }
 }
