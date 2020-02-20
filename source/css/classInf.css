@@ -259,26 +259,26 @@ main .slider .img-box img {
 
     .header .title {
 
-        left: 0px;
-        right: inherit;
+        top: 50%;
+        right: 50%;
+        transform: translate(50%, -50%);
 
-        height: 50px;
-        width: 150px;
+        height: 100px;
+        width: 200px;
 
-        border-top-right-radius: 5px;
-        border-bottom-right-radius: 5px;
+        background: rgba(150, 89, 28, 0.6);
 
-        box-shadow: none;
+        border-radius: 5px;
     }
-    
+
     div.bar::after {
-        
+
         height: 60px;
         width: 120px;
     }
-    
+
     .text-box {
-        
+
         margin: 50px auto 50px auto;
     }
 
@@ -312,14 +312,14 @@ main .slider .img-box img {
         line-height: 3.5rem;
         font-size: 2rem;
     }
-    
+
     main .slider {
-        
+
         overflow: inherit;
     }
-    
+
     main .slider .img-box {
-        
+
         padding-bottom: 50%;
         width: 50%;
     }
