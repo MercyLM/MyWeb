@@ -1,397 +1,303 @@
 @import "../css/main.css";
 
-/*header*/
-.header-bg {
+.header {
 
     position: relative;
 
-    min-height: 570px;
+    margin-top: 70px;
+
+    width: 100%;
+}
+
+.header > .img {
+
+    padding-bottom: 25%;
+
     width: 100%;
 
-    text-align: center;
-
-    background-image: url(../img/slider_2.jpg);
+    background-image: url("../img/slider_2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.header-bg::before {
-
-    content: "";
-    position: absolute;
-
-    top: 0px;
-    left: 0px;
-
-    height: 100%;
-    width: 100%;
-
-    background: black;
-    opacity: 0.2;
-}
-
-.news {
-    
-    background: rgb(250, 247, 247);
-}
-
-.news-box {
+.header > .title {
 
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     position: absolute;
 
-    flex-direction: column;
+    right: 0px;
+    bottom: -50px;
 
-    top: 150px;
-    left: 50%;
-    transform: translateX(-50%);
+    height: 150px;
+    width: 300px;
 
-    padding: 2.5% 5%;
+    background: rgba(192, 155, 119);
 
-    height: 90%;
-    width: 90%;
-
-    border-radius: 5px;
-
-    background: rgba(150, 89, 28, 0.8);
-
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
-    box-sizing: border-box;
-
-    z-index: 1;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    
+    transition: .5s;
 }
 
+.header > .title > .en-text,
+.header > .title > .text {
 
-.title,
-.small-title {
-
-    margin: 1.5rem 0;
-
-    text-align: left;
-
-    font-family: "華康中特圓體";
-
-    color: rgb(250, 247, 247);
-}
-
-.title {
-
+    margin-left: 25%;
     font-size: 2.5rem;
 }
 
-.small-title {
+.header > .title > .en-text {
 
-    font-size: 1.5rem;
-    letter-spacing: 0.25rem;
+    color: rgba(250, 247, 247, 0.25);
 }
 
-.list {
-
-    position: relative;
-
-    flex-grow: 1;
-    width: 100%;
-}
-
-.list::before {
-
-    content: "";
-    position: absolute;
-
-    top: 0px;
-    left: -10%;
-
-    height: 1px;
-    width: 10%;
-
-    background: rgb(250, 247, 247);
-
-    opacity: 0.5;
-}
-
-.list ul {
-
-    display: block;
-
-    padding: 0;
-}
-
-.list ul li {
-
-    text-align: left;
-
-    font-size: 1.5rem;
-}
-
-.list ul li {
-
-    display: block;
-
-    margin: 1rem 0;
-}
-
-.list ul li:hover {
-
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-
-    background: rgb(150, 89, 28);
-}
-
-.list ul li p,
-.list ul li p span {
+.header > .title > .text {
 
     color: rgb(250, 247, 247);
 }
 
-.list ul li p {
+/*main*/
+.box {
+
+    margin-top: 50px;
+
+    padding: 0px 10%;
+}
+
+.box > .type > .btn {
+
+    padding: 0px;
+
+    height: 50px;
+    width: 150px;
+
+    line-height: 50px;
+
+    font-family: "華康中圓體";
+    font-size: 2rem;
+
+    color: rgba(150, 89, 28, 0.3);
+
+    border-radius: 2px;
+    border: 1px solid rgba(150, 89, 28, 0.3);
+    background: transparent;
+    
+    cursor: pointer;
+
+}
+
+.box > .type > .btn.-on {
+
+    color: rgba(150, 89, 28, 0.8);
+    
+    border: 1px solid rgba(150, 89, 28, 0.8);
+
+}
+
+.content .list {
 
     display: block;
+    margin: 75px 0;
+    padding: 0px;
 
-    letter-spacing: 0.25rem;
+    letter-spacing: 0px;
 }
 
-.list ul li p span {
+.content .list .new::before {
+
+    content: "";
+    display: block;
+
+    height: 1px;
+
+    background: rgba(150, 89, 28, 0.5);
+}
+
+.content .list .new a {
+
+    position: relative;
+    display: block;
+}
+
+.content .list .new:nth-child(odd) a::before,
+.content .list .new:nth-child(even) a::before {
+
+    content: "";
+    display: block;
+    position: absolute;
+
+    height: 75px;
+    width: 10px;
+
+    z-index: -1;
+    transition: .5s;
+}
+
+.content .list .new:nth-child(odd) a:hover::before,
+.content .list .new:nth-child(even) a:hover::before {
+
+    width: 100%;
+}
+
+.content .list .new:nth-child(odd) a::before {
+
+    background: rgba(150, 89, 28, 0.8);
+}
+
+.content .list .new:nth-child(even) a::before {
+
+    background: rgba(211, 137, 64, 0.8);
+}
+
+.content .list .new a span,
+.content .list .new a p {
 
     display: inline-block;
-    height: 3.5rem;
-    line-height: 3.5rem;
-    width: 7.5%;
+
+    line-height: 75px;
+
+    font-size: 2rem;
+    letter-spacing: 0.25rem;
+
+    color: rgba(150, 89, 28, 0.8);
+
+    transition: .5s;
+}
+
+.content .list .new a:hover span,
+.content .list .new a:hover p {
+
+    color: rgba(250, 247, 247, 0.8);
+}
+
+.content .list .new a span {
 
     text-align: center;
 
-    border: 1px solid rgb(250, 247, 247);
-    border-radius: 10px;
+    width: 30%;
+
+    box-sizing: border-box;
 }
 
-.list img {
+.content .list .new a p {
 
-    position: absolute;
-
-    top: 0px;
-    right: -10%;
-
-    height: 200px;
-
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-/*header end*/
-/*main*/
-main {
-
-    position: relative;
-    background: rgba(230, 215, 203);
-}
-
-.show-box {
-
-    position: relative;
-
-    top: 50px;
-
-    height: 500px;
-
-    background: rgb(250, 247, 247);
-}
-
-.show {
-
-    position: relative;
-
-    top: 0px;
-    left: 50%;
-    transform: translateX(-50%);
-
-    height: 400px;
-    width: 75%;
-
-    background: rgba(150, 89, 28, 0.2);
-}
-
-.show::before {
-
-    content: "";
-
-    position: absolute;
-
-    top: 0px;
-    left: 0px;
-
-    height: 150px;
-    width: 40%;
-
-    background: rgb(250, 247, 247);
-}
-
-.show::after {
-
-    content: "";
-
-    position: absolute;
-
-    top: 0px;
-    right: 0px;
-
-    height: 150px;
-    width: 40%;
-
-    background: rgb(250, 247, 247);
-}
-
-.show img {
-
-    position: absolute;
-
-    top: 50%;
-    transform: translateY(-50%);
-    left: -10%;
-
-    width: 35%;
-}
-
-.show > .content {
-
-    position: absolute;
-
-    right: 0px;
-    bottom: 0px;
-
-    height: 250px;
     width: 70%;
-}
-
-.content p {
-
-    min-height: 4rem;
-    line-height: 4rem;
-
-    letter-spacing: 0.25rem;
-
-    color: rgba(150, 89, 28, 0.9);
-}
-
-.content .content-time {
 
     font-family: "華康中特圓體";
-    font-size: 2rem;
-    letter-spacing: 0.5rem;
 }
 
-.content .content-title {
+.box .change {
 
-    font-family: "華康中特圓體";
-    font-size: 2rem;
-}
-
-.content .content-text {
-
-    font-size: 1.5rem;
-}
-
-.show a {
-
-    position: absolute;
-
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 10px;
-
-    height: 40px;
-    line-height: 40px;
-    width: 125px;
+    margin: 50px 0;
 
     text-align: center;
+}
 
-    font-family: "華康中特圓體";
-    font-size: 1.5rem;
-    letter-spacing: 0.25rem;
+.box .change button {
 
-    color: rgba(150, 89, 28, 0.5);
+    padding: 0px;
 
-    border: 1px solid rgba(150, 89, 28, 0.5);
+    height: 50px;
+    width: 50px;
+
+    font-size: 2rem;
+
+    color: rgba(150, 89, 28, 0.4);
+
+    border: 1px solid rgba(150, 89, 28, 0.4);
     border-radius: 2px;
+    background: transparent;
 
+    box-sizing: border-box;
     transition: 0.5s;
+    cursor: pointer;
 }
 
-.content a:hover {
+.box .change button:hover {
 
-    color: rgba(150, 89, 28, 1);
+    color: rgba(150, 89, 28, 0.8);
 
-    border: 1px solid rgba(150, 89, 28, 1);
+    border: 1px solid rgba(150, 89, 28, 0.8);
 }
 
+.box .change button.-on {
+
+    color: rgba(250, 247, 247, 0.8);
+
+    border: 0px;
+    background: rgba(150, 89, 28, 0.6);
+}
 /*main end*/
-@media screen and (max-width : 768px) {
 
-    .list img {
-
-        display: none;
+@media screen and (max-width: 1200px){
+    
+    .header > .title {
+        
+        height: 125px;
+        width: 250px;
     }
+}
 
-    .small-title {
-
-        font-size: 2rem;
+@media screen and (max-width: 768px){
+    
+    .header > .img {
+        
+        padding-bottom: 50%;
     }
-
-    .list ul li p {
-
-        margin-bottom: 20px;
-
-        font-family: "華康中特圓體";
-        font-size: 2rem;
-
-        white-space: nowrap;
-        overflow: hidden;
+    
+    .header > .title {
+        
+        right: 50%;
+        bottom: 50%;
+        transform: translate(50%, 50%);
+        
+        height: 100px;
+        width: 200px;
     }
-
-    .list ul li p span {
-
+    
+    .header > .title > .en-text, 
+    .header > .title > .text {
+        
+        margin-left: 10%;
+    }
+    
+    .box > .type > .btn {
+        
+        height: 50px;
+        width: 100px;
+    }
+    
+    .content .list {
+        
+        margin: 50px 0;
+    }
+    
+    .content .list .new a span, 
+    .content .list .new a p {
+        
         display: block;
-        width: 20%;
-
-        margin-bottom: 20px;
+        
+        margin-left: 10%;
+        
+        line-height: 50px;
+        width: 100%;
     }
     
-    .show-box {
-
-        height: auto;
+    .content .list .new a span{
+        
+        text-align: left;
     }
     
-    .show {
-
-        height: auto;
+    .content .list .new:nth-child(odd) a::before, 
+    .content .list .new:nth-child(even) a::before {
         
-        margin-bottom: 100px;
+        height: 100px;
     }
-
-    .show img {
-
-        position: relative;
-        top: 0px;
-        left: 50%;
-        transform: translate(-50%, 0);
-        padding: 75px 0 0 0;
-        width: 80%;
-
-        z-index: 2;
-    }
-
-    .show > .content {
-
-        position: relative;
-/*        top: 100px;*/
-        left: 50%;
-        transform: translateX(-50%);
-
-/*        padding: 0 0 150px 0;*/
+    
+    .box .change button {
         
-        height: 300px;
-        width: 90%;
-
-        text-align: center;
-        
-        box-sizing: border-box;
+        height: 40px;
+        width: 40px;
     }
 }
