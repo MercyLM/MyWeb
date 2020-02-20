@@ -314,6 +314,8 @@
         text-align: center;
 
         padding: 25px 0 10px 0;
+        
+        letter-spacing: 0.5rem;
     }
 
     .box-1 > .content > .text,
