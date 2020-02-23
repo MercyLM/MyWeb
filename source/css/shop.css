@@ -61,28 +61,39 @@ body {
 
 .slick-slide img {
 
-    /*    width: 50%;*/
     max-height: 255px;
+
+    margin: 0 auto;
 }
 
 .hot-item .name {
 
     margin: 2rem 0;
 
+    text-align: center;
+
     font-family: "華康中特圓體";
     font-size: 2rem;
+    
+    letter-spacing: 0.75rem;
 
     color: rgb(150, 89, 28);
 }
 
 .hot-item .text {
 
+    margin-top: 1.5rem;
+    padding: 0px 10%;
+
     line-height: 3rem;
 
-    font-family: "華康中特圓體";
+    font-family: "華康中圓體";
     font-size: 1.5rem;
+    letter-spacing: 0.25rem;
 
     color: rgb(150, 89, 28);
+    
+    box-sizing: border-box;
 }
 
 .slick-prev,
@@ -199,7 +210,7 @@ li.-on::after {
 }
 
 .type li.-on button {
-    
+
     cursor: inherit;
 }
 
@@ -216,15 +227,15 @@ li.-on::after {
     height: 100px;
 
     letter-spacing: normal;
-    
+
     background: rgb(192, 155, 115);
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
-    
+
     z-index: 1;
 }
 
 .box .bar .type-text {
-    
+
     position: relative;
     display: inline-block;
     vertical-align: top;
@@ -235,156 +246,156 @@ li.-on::after {
     width: 35%;
 }
 
-.box .bar .type-text .text{
-    
+.box .bar .type-text .text {
+
     position: relative;
     display: none;
-    
+
     top: 50%;
     transform: translateY(-50%);
-    
+
     width: 100%;
-    
+
     font-size: 1.5rem;
     letter-spacing: 0.25rem;
-    
+
     color: rgba(250, 247, 247, 0.8);
 }
 
-.box .bar .type-text .text.-on{
-    
+.box .bar .type-text .text.-on {
+
     display: inline-block;
-    
+
     line-height: 3rem;
 }
 
 .box > .content {
-    
+
     text-align: center;
-    
+
     margin: 0px 10% 50px 10%;
-    
+
     height: 400px;
 }
 
 .box > .content .box-1 {
-    
+
     position: relative;
-    
+
     height: 100%;
-    
+
     letter-spacing: normal;
 }
 
 .box > .content .box-1 .box-text {
-    
+
     position: relative;
     display: inline-block;
     vertical-align: top;
-    
+
     height: 100%;
     width: 43%;
-    
+
     background: rgb(192, 155, 115);
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
-    
+
     z-index: 0;
 }
 
 .box > .content .box-1 .box-text::before {
-    
+
     content: "";
     position: absolute;
     display: block;
-    
+
     right: 0px;
     bottom: 0px;
-    
+
     transform: translateX(50%);
-    
+
     height: 20%;
     width: 10px;
-    
+
     background: rgb(192, 155, 115);
-    
+
     z-index: 10;
 }
 
 .box > .content .box-1 .box-text .text {
-    
+
     padding: 25px 5% 25px 10%;
-    
+
     text-align: left;
-    
+
     height: 80%;
     line-height: 3rem;
-    
+
     font-size: 1.5rem;
-    
+
     color: rgba(250, 247, 247, 0.8);
-    
+
     box-sizing: border-box;
 }
 
 .box > .content .box-1 .box-text .more-btn {
-    
+
     display: block;
-    
+
     margin: 0 auto;
-    
+
     height: 50px;
     line-height: 50px;
     width: 150px;
-    
+
     font-size: 1.5rem;
-    
+
     color: rgba(250, 247, 247, 0.6);
-    
+
     background: rgba(150, 89, 28, 0.4);
 }
 
 .box > .content .box-1 .box-img {
-    
+
     display: inline-block;
     vertical-align: bottom;
-    
+
     height: 20%;
     width: 57%;
-    
+
     background: rgb(192, 155, 115);
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
 }
 
 .box > .content .box-1 .box-img .img-bg {
-    
+
     position: absolute;
-    
+
     bottom: 0px;
     right: 0px;
-    
+
     height: 100%;
     width: 43%;
-    
+
     background-image: url("../img/item_2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    
+
     opacity: .2;
-    
+
     z-index: -1;
 }
 
 .box > .content .box-1 .box-img img {
-    
+
     position: absolute;
-    
+
     bottom: 0px;
     right: 22%;
     transform: translateX(50%);
-    
+
     height: 90%;
-    
+
     z-index: 9;
 }
 
@@ -398,5 +409,93 @@ li.-on::after {
 
 @media screen and (max-width : 768px) {
 
-    /*123 321 1234567*/
+    .hot-item-box .title,
+    .hot-item {
+
+        margin: 0px;
+        
+        width: 100%;
+
+        background: rgba(150, 89, 28, 0.2);
+    }
+    
+    .slick-initialized .slick-slide {
+        
+        padding-bottom: 50px;
+        
+        text-align: center;
+        
+        letter-spacing: normal;
+    }
+    
+    .slick-slide img {
+        
+        display: inline-block;
+        
+        max-height: 300px;
+    }
+    
+    .hot-item .text {
+        
+        display: inline-block;
+        vertical-align: top;
+        
+        text-align: left;
+        
+        margin: 0px;
+        padding: 10px;
+        
+        width: 50%;
+    }
+    
+    .type li {
+        
+        margin: 0px;
+        
+        width: 47.5%;
+    }
+    
+    .box .bar .type-text {
+        
+        width: 40%;
+    }
+    
+    .box > .content {
+        
+        margin: 0 auto 50px auto;
+        
+        height: auto;
+    }
+    
+    .box > .content .box-1 {
+        
+        height: auto;
+    }
+    
+    .box > .content .box-1 .box-text {
+        
+        height: auto;
+        width: 95%;
+        
+        padding-bottom: 25px;
+    }
+    
+    .box > .content .box-1 .box-text::before {
+        
+        content: none;
+    }
+    
+    .box > .content .box-1 .box-text .text {
+        
+        margin: 25px auto;
+        padding: 0px;
+        
+        height: auto;
+        width: 80%;
+    }
+    
+    .box > .content .box-1 .box-img {
+        
+        display: none;
+    }
 }

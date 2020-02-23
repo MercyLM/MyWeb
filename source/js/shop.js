@@ -20,7 +20,7 @@ $(document).ready(function () {
                 }
             },
             {
-                breakpoint: 600,
+                breakpoint: 768,
                 settings: {
                     arrows: false,
                     centerMode: false,
