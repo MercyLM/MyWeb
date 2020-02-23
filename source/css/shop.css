@@ -181,7 +181,7 @@ li.-on::after {
 
     background-color: rgb(192, 155, 115);
     transform: translateY(0%);
-    z-index: 10;
+    z-index: 5;
 }
 
 .type li button {

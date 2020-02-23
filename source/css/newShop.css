@@ -144,7 +144,7 @@ main > .title {
     width: 75%;
     
     border-radius: 50%;
-    background: rgba(150, 89, 28, 0.6);
+    background: rgba(150, 89, 28, 0.4);
     
     z-index: -1;
     
@@ -302,7 +302,7 @@ main > .title {
     
     color: rgba(150, 89, 28, 0.8);
     
-    border: 1px solid rgba(150, 89, 28, 0.8);
+    border: 1px solid rgba(150, 89, 28, 0.6);
     border-radius: 2px;
     
     box-sizing: border-box;
