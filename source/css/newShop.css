@@ -87,6 +87,7 @@
 
 .slick-slide {
     
+    position: relative;
     padding: 0 20px;
     
     box-sizing: border-box;
@@ -127,6 +128,27 @@ main > .title {
     margin: 0 auto;
     
     height: 100%;
+}
+
+.slider-item .slick-center::after {
+    
+    content: "";
+    position: absolute;
+    display: block;    
+    
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    
+    height: 35%;
+    width: 75%;
+    
+    border-radius: 50%;
+    background: rgba(150, 89, 28, 0.6);
+    
+    z-index: -1;
+    
+    transition: .5s;
 }
 
 .slider-item .slick-prev {
@@ -195,7 +217,7 @@ main > .title {
 
 .show-box.slick-slide {
     
-    padding: 0 60px;
+    padding: 0 100px;
 }
 
 .show-box img {

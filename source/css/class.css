@@ -24,6 +24,8 @@ header .img {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
 }
 
 header .img::after {
@@ -274,7 +276,7 @@ header .img > .title {
     .card .card-center, 
     .card .card-right {
         
-        transform: translateY(60px);
+        transform: translateY(0px);
     }
     
     .card .card-right {
