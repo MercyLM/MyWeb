@@ -7,8 +7,8 @@ $(document).ready(function () {
         centerMode: false,
         centerPadding: '80px',
         slidesToShow: 3,
-//        autoplay: true,
-//        autoplaySpeed: 5000,
+        autoplay: true,
+        autoplaySpeed: 10000,
         responsive: [
             {
                 breakpoint: 900,
