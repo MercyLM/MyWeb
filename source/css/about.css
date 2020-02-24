@@ -261,6 +261,8 @@
 
         height: auto;
         margin: 0;
+        
+        overflow: hidden;
     }
 
     .box-3 {
@@ -306,7 +308,7 @@
 
     .box-3 > .img {
 
-        transform: translate(-50%, 25%);
+        transform: translate(-50%, 25%) !important;
     }
 
     .box-1 > .content > .title,
