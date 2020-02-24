@@ -174,13 +174,14 @@ main {
     width: 100%;
 
     white-space: nowrap;
-    letter-spacing: normal
-        ;
+    letter-spacing: normal;
 
     animation-name: sliderAnima;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-duration: 10s;
+    
+    z-index: -1;
 }
 
 .slider-box .item-list:hover {
@@ -288,7 +289,7 @@ main {
 
     letter-spacing: 0.25rem;
 
-    transition: 0.5s;
+    transition: 0.5s !important;
 }
 
 .slider-box .box .btn-more {
@@ -609,7 +610,7 @@ main {
     position: relative;
 
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%) !important;
 
     bottom: 25px;
 
@@ -793,7 +794,7 @@ main {
 
     bottom: -25px;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%) !important;
 
     margin: 0;
 
@@ -818,7 +819,6 @@ main {
     text-align: center;
 
     overflow: hidden;
-    /*    white-space: nowrap;*/
 
     z-index: 2;
 }
@@ -1126,7 +1126,7 @@ main {
 
     bottom: -25px;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%) !important;
 
     margin: 0;
 
@@ -1331,8 +1331,8 @@ main {
         text-align: center;
         font-size: 1.75rem;
 
-        background: rgba(150, 89, 28, 0.75);
-        border: 1px solid rgba(250, 247, 247, 0.75);
+        background: rgba(150, 89, 28, 0.5);
+        border: 1px solid rgba(250, 247, 247, 0.5);
 
         letter-spacing: 0.5rem;
     }
@@ -1571,9 +1571,9 @@ main {
         font-size: 1.5rem;
         letter-spacing: 0.25rem;
 
-        background: rgba(150, 89, 28, 0.8);
+        background: rgba(150, 89, 28, 0.5);
 
-        z-index: 2;
+        z-index: 3;
     }
 
     .title-class::before {
@@ -1666,7 +1666,7 @@ main {
 
         bottom: -25px;
         left: 45%;
-        transform: translateX(-50%);
+        transform: translateX(-50%) !important;
 
         height: 40px;
         line-height: 40px;
@@ -1770,7 +1770,7 @@ main {
 
         bottom: -20px;
         left: 55%;
-        transform: translateX(-50%);
+        transform: translateX(-50%) !important;
 
         height: 40px;
         line-height: 40px;

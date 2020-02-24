@@ -13,6 +13,7 @@
     <link rel="icon" type="image/x-icon" href="MercyLM.png" />
     <link rel="apple-touch-icon" href="MercyLM.png">
     <!--    CSS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./source/css/news.css">
 </head>
 
@@ -86,7 +87,7 @@
                     <button class="btn">活動公告</button>
                 </div>
                 <div class="content">
-                    <ul class="list">
+                    <ul data-aos="fade-down" data-aos-duration="1000" data-aos-offset="0" data-aos-easing="ease-in-out" data-aos-once="true" class="list">
                         <li class="new">
                             <a href="javascript:">
                                 <span>2020/02/07</span>
@@ -169,4 +170,9 @@
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script type="text/javascript" src="./source/js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+
+    </script>
 </body></html>

@@ -269,6 +269,11 @@
         margin-left: 10%;
     }
     
+    .box {
+        
+        padding: 0px 10% 0px 5%;
+    }
+    
     .box > .type > .btn {
         
         height: 50px;
