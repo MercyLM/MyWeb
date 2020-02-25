@@ -13,12 +13,15 @@
 //變量宣告
 //背景色
 $bg-min-color: rgb(250, 247, 247);
+$bg-min-color-8: rgba(250, 247, 247, .8);
+$bg-min-color-6: rgba(250, 247, 247, .6);
 //主色
 $min-color: rgb(150, 89, 28);
 $min-color-8: rgba(150, 89, 28, .8);
 $min-color-6: rgba(150, 89, 28, .6);
 $min-color-4: rgba(150, 89, 28, .4);
 $min-color-2: rgba(150, 89, 28, .2);
+$min-color-1: rgba(150, 89, 28, .1);
 //輔色
 $sup-color: rgb(240, 231, 225);
 //文字字體
@@ -350,7 +353,7 @@ body {
 
         height: 40px;
         line-height: 40px;
-        width: 150px;
+        width: 100px;
 
         border: 1px solid $min-color-6;
         border-radius: 3px;
@@ -500,6 +503,11 @@ body {
 
                         display: inline-block;
                     }
+                }
+                
+                &:nth-child(2) {
+                    
+                    margin-left: 0px;
                 }
             }
         }
@@ -704,7 +712,6 @@ body {
 
                     height: 35px;
                     line-height: 35px;
-                    width: 100px;
                 }
             }
 

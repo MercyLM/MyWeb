@@ -218,7 +218,7 @@ body {
   display: inline-block;
   height: 40px;
   line-height: 40px;
-  width: 150px;
+  width: 100px;
   border: 1px solid rgba(150, 89, 28, 0.6);
   border-radius: 3px;
   box-sizing: border-box;
@@ -318,6 +318,9 @@ body {
   }
   .navbar .ul-box .li-box .dropdown .logo-box {
     display: inline-block;
+  }
+  .navbar .ul-box .li-box:nth-child(2) {
+    margin-left: 0px;
   }
   .navbar .mobile-ul {
     display: block;
@@ -442,7 +445,6 @@ body {
     margin: 0 1px;
     height: 35px;
     line-height: 35px;
-    width: 100px;
   }
   footer .footer p {
     display: block;
