@@ -72,24 +72,11 @@ $(function () {
     }
 
     function menuFunction() {
+        
+        $(".btn-box").on("click", function(e) {
 
-        var menu = document.getElementById("menu");
-        var menuBox = document.getElementById("menu-box");
-        var menuClose = document.getElementById("close-menu");
-        var aside = document.getElementById("aside");
-
-        menu.onclick = function () {
-
-            menuBox.style.width = "100%";
-            menu.style.display = "none";
-            aside.style.zIndex = 0;
-        }
-
-        menuClose.onclick = function () {
-
-            menuBox.style.width = "0%";
-            menu.style.display = "inline-block";
-            aside.style.zIndex = 4;
-        }
+            $(".menu-btn").toggleClass("-on");
+            $(".mobile-ul").toggleClass("-on");
+        });
     }
 });
