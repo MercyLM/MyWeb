@@ -1,0 +1,410 @@
+@import "main";
+
+//header
+.header {
+
+    position: relative;
+
+    margin-top: 70px;
+
+    width: 100%;
+
+    > .img {
+
+        padding-bottom: 25%;
+
+        width: 100%;
+
+        background-image: url("../img/slider_2.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    > .title {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+
+        right: 0px;
+        bottom: -50px;
+
+        height: 150px;
+        width: 300px;
+
+        background: $sup-color-1;
+
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+
+        transition: .5s;
+
+        > .en-text,
+        > .text {
+
+            margin-left: 25%;
+            font-size: $font-size-3;
+        }
+
+        .en-text {
+
+            color: $bg-min-color-6;
+        }
+
+        .text {
+
+            color: $bg-min-color;
+        }
+    }
+}
+
+//header end
+//main
+.box {
+
+    margin-top: 50px;
+
+    padding: 0px 10%;
+
+    > .type {
+
+        > .btn {
+
+            padding: 0px;
+
+            height: 50px;
+            width: 150px;
+
+            line-height: 50px;
+
+            font-family: "華康中圓體";
+            font-size: $font-size-2;
+
+            color: $min-color-3;
+
+            border-radius: 2px;
+            border: 1px solid $min-color-3;
+            background: transparent;
+
+            transition: $transition-5;
+            cursor: pointer;
+
+            &:hover {
+
+                color: $min-color-6;
+
+                border: 1px solid $min-color-6;
+            }
+
+            &.-on {
+
+                color: $min-color-8;
+
+                border: 1px solid $min-color-8;
+
+            }
+        }
+
+        .change {
+
+            margin: 50px 0;
+
+            text-align: center;
+
+            button {
+
+                padding: 0px;
+
+                height: 50px;
+                width: 50px;
+
+                font-size: 2rem;
+
+                color: rgba(150, 89, 28, 0.4);
+
+                border: 1px solid rgba(150, 89, 28, 0.4);
+                border-radius: 2px;
+                background: transparent;
+
+                box-sizing: border-box;
+                transition: 0.5s;
+                cursor: pointer;
+
+                &:hover {
+
+                    color: rgba(150, 89, 28, 0.8);
+
+                    border: 1px solid rgba(150, 89, 28, 0.8);
+                }
+
+                &.-on {
+
+                    color: rgba(250, 247, 247, 0.8);
+
+                    border: 0px;
+                    background: rgba(150, 89, 28, 0.6);
+                }
+            }
+        }
+
+    }
+}
+
+.content {
+
+    .list {
+
+        display: none;
+        margin: 75px 0;
+        padding: 0px;
+
+        letter-spacing: 0px;
+
+        &.-on {
+
+            display: block;
+        }
+
+        .new {
+
+            &::before {
+
+                content: "";
+                display: block;
+
+                height: 1px;
+
+                background: $min-color-6;
+            }
+
+            a {
+
+                position: relative;
+                display: block;
+
+                span,
+                p {
+
+                    display: inline-block;
+
+                    line-height: 75px;
+
+                    font-size: $font-size-2;
+                    letter-spacing: 0.25rem;
+
+                    color: $min-color-8;
+
+                    transition: $transition-5 + .5s;
+                }
+
+                &:hover {
+
+                    span,
+                    p {
+
+                        color: $bg-min-color-8;
+                    }
+                }
+
+                span {
+
+                    text-align: center;
+
+                    width: 30%;
+
+                    box-sizing: border-box;
+                }
+
+                p {
+
+                    width: 70%;
+
+                    font-family: $font-family-bt;
+                }
+            }
+
+            &:nth-child(odd),
+            &:nth-child(even) {
+
+                a {
+
+                    &:hover::before {
+
+                        width: 100%;
+                    }
+                }
+            }
+
+            &:nth-child(odd),
+            &:nth-child(even) {
+
+                a::before {
+
+                    content: "";
+                    display: block;
+                    position: absolute;
+
+                    height: 75px;
+                    width: 10px;
+
+                    z-index: -1;
+                    transition: 1s;
+                }
+            }
+
+            &:nth-child(odd) a::before {
+
+                background: $min-color-8;
+            }
+
+            &:nth-child(even) a::before {
+
+                background: $sup-color-2;
+            }
+        }
+    }
+}
+
+.box {
+    .change {
+
+        margin: 50px 0;
+
+        text-align: center;
+
+        button {
+
+            padding: 0px;
+
+            height: 50px;
+            width: 50px;
+
+            font-size: 2rem;
+
+            color: rgba(150, 89, 28, 0.4);
+
+            border: 1px solid rgba(150, 89, 28, 0.4);
+            border-radius: 2px;
+            background: transparent;
+
+            box-sizing: border-box;
+            transition: 0.5s;
+            cursor: pointer;
+
+            &:hover {
+
+                color: rgba(150, 89, 28, 0.8);
+
+                border: 1px solid rgba(150, 89, 28, 0.8);
+            }
+
+            &.-on {
+
+                color: rgba(250, 247, 247, 0.8);
+
+                border: 0px;
+                background: rgba(150, 89, 28, 0.6);
+            }
+        }
+    }
+}
+
+//main end
+@media screen and (max-width: 1200px) {
+
+    .header {
+
+        > .title {
+
+            height: 125px;
+            width: 250px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .header {
+
+        > .title {
+
+            right: 50%;
+            bottom: 50%;
+            transform: translate(50%, 50%);
+
+            height: 100px;
+            width: 200px;
+
+            > .en-text,
+            > .text {
+
+                margin-left: 10%;
+            }
+        }
+
+        > .img {
+
+            padding-bottom: 50%;
+        }
+    }
+
+    .box {
+
+        padding: 0px 10% 0px 5%;
+
+        > .type {
+
+            > .btn {
+
+                height: 50px;
+                width: 100px;
+            }
+        }
+    }
+
+    .content {
+
+        .list {
+
+            .new {
+
+                a {
+
+                    span,
+                    p {
+
+                        display: block;
+
+                        margin-left: 10%;
+
+                        line-height: 50px;
+                        width: 100%;
+                    }
+
+                    span {
+
+                        text-align: left;
+                    }
+                }
+
+                &:nth-child(odd) a::before,
+                &:nth-child(even) a::before {
+
+                    height: 100px;
+                }
+            }
+        }
+    }
+
+    .box {
+
+        .change {
+
+            button {
+
+                height: 40px;
+                width: 40px;
+            }
+        }
+    }
+}

@@ -15,15 +15,21 @@
 $bg-min-color: rgb(250, 247, 247);
 $bg-min-color-8: rgba(250, 247, 247, .8);
 $bg-min-color-6: rgba(250, 247, 247, .6);
+$bg-min-color-4: rgba(250, 247, 247, .4);
+$bg-min-color-2: rgba(250, 247, 247, .2);
+$bg-min-color-1: rgba(250, 247, 247, .1);
 //主色
 $min-color: rgb(150, 89, 28);
 $min-color-8: rgba(150, 89, 28, .8);
 $min-color-6: rgba(150, 89, 28, .6);
 $min-color-4: rgba(150, 89, 28, .4);
+$min-color-3: rgba(150, 89, 28, .3);
 $min-color-2: rgba(150, 89, 28, .2);
 $min-color-1: rgba(150, 89, 28, .1);
 //輔色
 $sup-color: rgb(240, 231, 225);
+$sup-color-1: rgb(192, 155, 119);
+$sup-color-2: rgb(211, 137, 64, 0.8);
 //文字字體
 $font-family-t: "華康中圓體";
 $font-family-bt: "華康中特圓體";
@@ -80,6 +86,16 @@ html {
 }
 
 //reset end
+//物件宣告
+@mixin btn-hover {
+
+    color: $min-color;
+
+    background: $bg-min-color-6;
+
+    border: 1px solid $min-color;
+}
+//物件宣告 end
 //nav
 .news .ul-box .li-box:nth-child(2) .dropdown,
 .newShop .ul-box .li-box:nth-child(3) .dropdown,
@@ -505,9 +521,9 @@ body {
                         display: inline-block;
                     }
                 }
-                
+
                 &:nth-child(2) {
-                    
+
                     margin-left: 0px;
                 }
             }
@@ -592,9 +608,9 @@ body {
                     }
                 }
             }
-            
+
             &.-on {
-                
+
                 width: 100%;
             }
         }
@@ -615,7 +631,7 @@ body {
                 display: inline-block;
 
                 padding: 10px;
-                
+
                 height: 50px;
                 width: 50px;
 
