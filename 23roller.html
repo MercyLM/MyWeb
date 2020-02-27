@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title>Example Title</title>
+    <style>
+        .box {
+
+            position: relative;
+
+/*            top: 50%;*/
+/*            transform: translate(0, -50%);*/
+
+            height: 500px;
+            width: 500px;
+
+            margin: 0 auto;
+
+            border-radius: 50%;
+            background: skyblue;
+
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+        }
+
+        .box .circle {
+
+            position: relative;
+
+            margin: 0 auto;
+
+            top: 50%;
+            transform: translate(0, -50%);
+
+            height: 80%;
+            width: 80%;
+
+            border-radius: 50%;
+            background: white;
+
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+
+            z-index: 2;
+        }
+
+        .box .circle-bg {
+
+            position: absolute;
+
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            height: 80%;
+            width: 80%;
+
+            border-radius: 50%;
+
+            z-index: 1;
+        }
+
+        .box .circle-bg {
+            
+            content: "";
+            display: block;
+            position: absolute;
+
+            background: blue;
+
+            top: 0px;
+            left: 50%;
+            transform: translate(-50%, 0);
+            
+            border-top: 0px solid transparent;
+            border-right: 50px solid blue;
+            border-bottom: 10px solid blue;
+            border-left: 50px solid blue;
+
+            z-index: 3;
+        }
+        
+        .box .arrow::before {
+            
+            content: "";
+            display: block;
+            position: absolute;
+
+            background: blue;
+
+            top: 0px;
+            left: 50%;
+            transform: translate(-50%, 0);
+            
+            border-top: 0px solid transparent;
+            border-right: 50px solid blue;
+            border-bottom: 10px solid blue;
+            border-left: 50px solid blue;
+
+            z-index: 3;
+        }
+
+        .box .circle .num {
+
+            position: absolute;
+            display: block;
+
+            height: 50px;
+            width: 50px;
+
+            text-align: center;
+            font-size: 40px;
+
+            border-radius: 50%;
+
+            z-index: 5;
+        }
+
+        .box .circle .num.s1 {
+
+            top: 12.5%;
+            left: 70%;
+            transform: translate(-50%, -50%);
+        }
+
+        .box .circle .num.s2 {
+
+            top: 28%;
+            left: 87.5%;
+            transform: translate(-50%, -50%);
+        }
+
+        .box .circle .num.s3 {
+
+            top: 50%;
+            left: 95%;
+            transform: translate(-50%, -50%);
+        }
+
+        .box .circle .num.s4 {
+
+            top: 72%;
+            left: 87.5%;
+            transform: translate(-50%, -50%);
+        }
+
+        .box .circle .num.s5 {
+
+            top: 87.5%;
+            left: 70%;
+            transform: translate(-50%, -50%);
+        }
+
+        .box .circle .num.s6 {
+
+            top: 95%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .box .circle .num.s7 {
+
+            top: 87.5%;
+            left: 30%;
+            transform: translate(-50%, -50%);
+        }
+
+        .box .circle .num.s8 {
+
+            top: 72%;
+            left: 12.5%;
+            transform: translate(-50%, -50%);
+        }
+
+        .box .circle .num.s9 {
+
+            top: 50%;
+            left: 5%;
+            transform: translate(-50%, -50%);
+        }
+
+        .box .circle .num.s10 {
+
+            top: 28%;
+            left: 12.5%;
+            transform: translate(-50%, -50%);
+        }
+
+        .box .circle .num.s11 {
+
+            top: 12.5%;
+            left: 30%;
+            transform: translate(-50%, -50%);
+        }
+
+        .box .circle .num.s12 {
+
+            top: 5%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="circle">
+            <span id="s1" class="num s1">1</span>
+            <span id="s2" class="num s2">2</span>
+            <span id="s3" class="num s3">3</span>
+            <span id="s4" class="num s4">4</span>
+            <span id="s5" class="num s5">5</span>
+            <span id="s6" class="num s6">6</span>
+            <span id="s7" class="num s7">7</span>
+            <span id="s8" class="num s8">8</span>
+            <span id="s9" class="num s9">9</span>
+            <span id="s10" class="num s10">10</span>
+            <span id="s11" class="num s11">11</span>
+            <span id="s12" class="num s12">12</span>
+        </div>
+        <div class="circle-bg"></div>
+        <div class="arrow"></div>
+    </div>
+    <script type="text/javascript"></script>
+</body></html>
