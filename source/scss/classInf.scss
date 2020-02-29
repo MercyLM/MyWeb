@@ -1,0 +1,356 @@
+@import "main";
+
+//header
+.header {
+
+    position: relative;
+
+    margin-top: 70px;
+
+    .slider {
+
+        display: inline-block;
+
+        max-height: 500px;
+        width: 85%;
+
+        img {
+
+            width: 100%;
+        }
+    }
+
+    h2 {
+
+        position: absolute;
+        display: inline-block;
+
+        top: 35%;
+        right: 7.5%;
+        transform: translate(50%, -50%);
+
+        writing-mode: vertical-rl;
+
+        font-size: $font-size-3 + 1.5rem;
+        font-family: $font-family-bt;
+        letter-spacing: 1rem;
+
+        color: $min-color-2;
+    }
+
+    .title {
+
+        position: absolute;
+
+        right: 0px;
+        bottom: 25px;
+
+        height: 150px;
+        width: 300px;
+
+        background: $sup-color-1;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.75);
+
+        .text {
+
+            position: relative;
+
+            top: 50%;
+            transform: translateY(-50%);
+
+            text-align: center;
+
+            font-size: 2.5rem;
+            color: rgb(250, 247, 247);
+        }
+    }
+}
+
+//header end
+//main
+main {
+
+    .bar {
+
+        height: 25px;
+
+        border: 0px;
+
+        background: $sup-color-1;
+
+        overflow: inherit;
+
+        &::after {
+
+            content: "";
+            position: absolute;
+            display: block;
+
+            left: 50%;
+            transform: translate(-50%, 12.5px);
+
+            height: 75px;
+            width: 150px;
+
+            border-radius: 0 0 150px 150px;
+
+            background: $sup-color-1;
+
+            z-index: 1;
+        }
+
+        &.end {
+
+            &::after {
+
+                content: none;
+            }
+        }
+    }
+
+    .title {
+
+        position: relative;
+        text-align: center;
+
+        font-size: $font-size-2;
+
+        letter-spacing: 0.25rem;
+
+        color: $bg-min-color;
+
+        z-index: 2;
+    }
+
+    .text-box {
+
+        margin: 75px auto 100px auto;
+
+        padding: 5%;
+
+        width: 85%;
+
+        background: $min-color-6;
+        border-radius: 10px;
+        box-sizing: border-box;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+
+        .text {
+
+            line-height: 4rem;
+            font-size: $font-size-1;
+            letter-spacing: 0.25rem;
+
+            color: $bg-min-color;
+        }
+    }
+
+    .information {
+
+        height: 350px;
+
+        letter-spacing: normal;
+
+        @mixin box-style {
+
+            display: inline-block;
+            vertical-align: top;
+
+            padding: 0 5% 0 7.5%;
+
+            height: 100%;
+            width: 50%;
+
+            box-sizing: border-box;
+        }
+
+        @mixin title {
+
+            font-size: $font-size-2;
+            font-family: $font-family-bt;
+            letter-spacing: 0.75rem;
+            line-height: 4rem;
+        }
+
+        @mixin text {
+
+            font-size: $font-size-1;
+            font-family: $font-family-bt;
+            line-height: 3rem;
+            letter-spacing: 0.25rem;
+        }
+
+        .left-box {
+
+            @include box-style;
+
+            background: $min-color-4;
+
+            .title {
+
+                @include title;
+            }
+
+            .text {
+
+                @include text;
+
+                color: $bg-min-color;
+            }
+        }
+
+        .right-box {
+
+            @include box-style;
+
+            background: $min-color-2;
+
+            .title {
+
+                @include title;
+
+                color: $min-color-8;
+            }
+
+            .text {
+
+                @include text;
+
+                color: $min-color-8;
+            }
+        }
+    }
+
+    .slider {
+
+        margin-top: -2rem;
+
+        letter-spacing: normal;
+
+        width: 100%;
+
+        .img-box {
+
+            position: relative;
+            display: inline-block;
+
+            padding-bottom: 25%;
+
+            width: 25%;
+
+            img {
+
+                position: absolute;
+
+                width: 100%;
+            }
+        }
+    }
+}
+
+//main end
+@media screen and (max-width: 1200px) {
+
+    main {
+
+        .information {
+
+            height: 300px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .header {
+
+        h2 {
+
+            top: 50%;
+
+            height: 80%;
+
+            font-size: 3rem;
+        }
+
+        .title {
+
+            top: 50%;
+            right: 50%;
+            transform: translate(50%, -50%);
+
+            height: 100px;
+            width: 200px;
+
+            background: rgba(150, 89, 28, 0.6);
+
+            border-radius: 5px;
+        }
+    }
+
+    main {
+
+        .bar {
+
+            &::after {
+
+                height: 60px;
+                width: 120px;
+            }
+        }
+
+        .text-box {
+
+            margin: 50px auto 50px auto;
+        }
+
+        .information {
+
+            height: auto;
+
+            @mixin box-style-768 {
+
+                display: block;
+
+                padding: 24px 10%;
+
+                height: auto;
+                width: 100%;
+
+                .title {
+
+                    font-size: $font-size-3;
+                }
+
+                .text {
+
+                    margin-top: 20px;
+
+                    line-height: 3.5rem;
+                    font-size: $font-size-2;
+                }
+            }
+
+            .left-box {
+
+                @include box-style-768;
+            }
+
+            .right-box {
+
+                @include box-style-768;
+            }
+        }
+
+        .slider {
+
+            overflow: inherit;
+
+            .img-box {
+
+                padding-bottom: 50%;
+                width: 50%;
+            }
+        }
+    }
+}
