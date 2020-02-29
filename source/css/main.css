@@ -293,7 +293,6 @@ body {
   body {
     width: 100%;
     min-width: 0px;
-    max-width: 750px;
   }
 
   aside {
@@ -304,7 +303,6 @@ body {
     text-align: inherit;
     width: 100%;
     min-width: 0px;
-    max-width: 750px;
   }
   .navbar .ul-box {
     width: auto;
