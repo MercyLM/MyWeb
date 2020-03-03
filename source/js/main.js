@@ -81,7 +81,7 @@ $(function () {
         $(".btn-box").on("click", function (e) {
 
             $(".menu-btn").toggleClass("-on");
-            $(".mobile-ul").toggleClass("-on");
+            $(".ul-box").toggleClass("-on");
         });
     }
 });
