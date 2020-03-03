@@ -1,9 +1,12 @@
+$(window).on("load", function () {
+
+    $(".loading").toggleClass("-hide");
+});
+
 $(function () {
 
     menuFunction();
     scrollFunction();
-    
-    $(".loading").toggleClass("-hide");
 
     function scrollFunction() {
 
@@ -74,8 +77,8 @@ $(function () {
     }
 
     function menuFunction() {
-        
-        $(".btn-box").on("click", function(e) {
+
+        $(".btn-box").on("click", function (e) {
 
             $(".menu-btn").toggleClass("-on");
             $(".mobile-ul").toggleClass("-on");
