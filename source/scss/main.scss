@@ -148,6 +148,7 @@ html {
         vertical-align: top;
 
         padding: 10px;
+        margin-left: 10%;
 
         height: 50px;
 
@@ -460,18 +461,12 @@ body {
 
                     width: 100px;
                 }
-
-                .logo-box {
-
-                    .logo {
-
-                        height: 40px;
-                        width: 200px;
-
-                        padding: 15px 20px;
-                    }
-                }
             }
+        }
+
+        .logo-box {
+
+            margin-left: 0px;
         }
     }
 }

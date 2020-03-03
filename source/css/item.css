@@ -81,6 +81,7 @@ html {
   display: inline-block;
   vertical-align: top;
   padding: 10px;
+  margin-left: 10%;
   height: 50px;
 }
 .navbar .logo-box img {
@@ -279,10 +280,8 @@ body {
   .navbar .ul-box .li-box .dropdown {
     width: 100px;
   }
-  .navbar .ul-box .li-box .logo-box .logo {
-    height: 40px;
-    width: 200px;
-    padding: 15px 20px;
+  .navbar .logo-box {
+    margin-left: 0px;
   }
 }
 @media screen and (max-width: 768px) {
