@@ -478,6 +478,17 @@ header {
   height: 550px;
   width: 100%;
 }
+header .loading {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background: white;
+  z-index: 999;
+  transition: 1s;
+}
+header .loading.-hide {
+  opacity: 0;
+}
 header .header-background {
   display: block;
   position: fixed;

@@ -2,6 +2,8 @@ $(function () {
 
     menuFunction();
     scrollFunction();
+    
+    $(".loading").toggleClass("-hide");
 
     function scrollFunction() {
 
