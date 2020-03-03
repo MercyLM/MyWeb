@@ -485,7 +485,7 @@ main .item-box {
 }
 main .item-box .box-information {
   display: inline-flex;
-  margin-top: 140px;
+  margin-top: 70px;
   padding: 40px 5%;
   width: 100%;
   background: white;
