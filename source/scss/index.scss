@@ -46,11 +46,8 @@ header {
         &.-hide {
 
             opacity: 0;
-        }
-
-        .loading-img {
-
-            //code
+            
+            z-index: -2;
         }
         
         @mixin load-text-style {

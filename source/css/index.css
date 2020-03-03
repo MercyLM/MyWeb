@@ -489,6 +489,7 @@ header .loading {
 }
 header .loading.-hide {
   opacity: 0;
+  z-index: -2;
 }
 header .loading .title {
   position: absolute;
