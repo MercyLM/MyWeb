@@ -173,7 +173,7 @@ aside {
   z-index: 4;
 }
 aside .aside-top-btn {
-  display: none;
+  display: block;
   position: absolute;
   right: 0px;
   bottom: 20px;
@@ -186,9 +186,6 @@ aside .aside-top-btn {
   background-repeat: no-repeat;
   background-position: center;
   transition: 0.5s;
-}
-aside .aside-top-btn.show {
-  display: block;
 }
 aside .aside-top-btn:hover {
   transform: translateY(-10px);
@@ -821,7 +818,7 @@ main .slider-box .item-list > .item::before {
 .news-box .item-list .card {
   position: relative;
   display: inline-block;
-  margin: 0px 2.5%;
+  margin: 0px 2%;
   width: 300px;
   background: rgba(150, 89, 28, 0.6);
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);

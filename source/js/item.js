@@ -39,4 +39,20 @@ $(document).ready(function () {
             }
         ]
     });
+    
+    //當指標移入商品小圖
+    $(".img-slider>img").mouseenter(function(){
+        
+        //切換大圖變成當前小圖的圖片
+        $(".img-box>img").attr("src", this.src);
+    });    
+    
+    //當指標離開整個商品圖範圍
+    $(".img-box").mouseleave(function(){
+        
+        //重置為第一張圖
+        var img = $(".img-slider>img:first");
+
+        $(".img-box>img").attr("src", img.attr("src"));
+    });
 });
