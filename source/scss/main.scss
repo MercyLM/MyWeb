@@ -529,7 +529,7 @@ body {
 
             .li-box {
 
-                display: block;
+                display: none;
 
                 text-align: center;
 
@@ -634,6 +634,11 @@ body {
             &.-on {
 
                 width: 100%;
+                
+                .li-box {
+                    
+                    display: block;
+                }
             }
         }
 
@@ -697,10 +702,10 @@ body {
                     }
 
                     &.-on {
-
-                        height: 0px;
-
+                        
                         transform: rotate(360deg);
+                        
+                        height: 0px;
 
                         &:before,
                         &:after {

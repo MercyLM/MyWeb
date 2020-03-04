@@ -328,7 +328,7 @@ body {
     transition: 0.5s;
   }
   .navbar .ul-box .li-box {
-    display: block;
+    display: none;
     text-align: center;
     left: 0;
     transform: translateX(0);
@@ -389,6 +389,9 @@ body {
   .navbar .ul-box.-on {
     width: 100%;
   }
+  .navbar .ul-box.-on .li-box {
+    display: block;
+  }
   .navbar .btn-box {
     position: relative;
     display: inline-block;
@@ -427,8 +430,8 @@ body {
     top: 10px;
   }
   .navbar .btn-box .btn-boder .menu-btn.-on {
-    height: 0px;
     transform: rotate(360deg);
+    height: 0px;
   }
   .navbar .btn-box .btn-boder .menu-btn.-on:before, .navbar .btn-box .btn-boder .menu-btn.-on:after {
     top: 0px;
