@@ -575,6 +575,7 @@ body {
 }
 .content .list.-on {
   display: block;
+  transform: none;
 }
 .content .list .new::before {
   content: "";
@@ -625,6 +626,55 @@ body {
 }
 .content .list .new:nth-child(even) a::before {
   background: rgba(211, 137, 64, 0.8);
+}
+.content .list .new .new-box {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0px;
+  left: 0px;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+.content .list .new .new-box .new-content {
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  border-radius: 5px;
+  background: #f0e7e1;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+}
+.content .list .new .new-box .new-content .title {
+  padding: 0px 5%;
+  line-height: 3;
+  font-size: 2rem;
+  color: rgba(150, 89, 28, 0.8);
+  box-sizing: border-box;
+}
+.content .list .new .new-box .new-content .content-box {
+  flex-grow: 1;
+}
+.content .list .new .new-box .new-content .content-box .content {
+  display: flex;
+  align-items: flex-start;
+  padding: 10px 5% 50px 5%;
+  height: 100%;
+  box-sizing: border-box;
+}
+.content .list .new .new-box .new-content .content-box .content .text {
+  flex-grow: 1;
+  padding-right: 10%;
+  line-height: 2;
+  letter-spacing: 0.25rem;
+  font-size: 1.5rem;
+  color: rgba(150, 89, 28, 0.6);
+  box-sizing: border-box;
+}
+.content .list .new .new-box .new-content .content-box .content img {
+  width: 30%;
 }
 
 .box .change {
@@ -696,6 +746,19 @@ body {
   }
   .content .list .new:nth-child(odd) a::before, .content .list .new:nth-child(even) a::before {
     height: 100px;
+  }
+  .content .list .new .new-box .new-content .title {
+    text-align: center;
+  }
+  .content .list .new .new-box .new-content .content-box .content {
+    flex-direction: column;
+  }
+  .content .list .new .new-box .new-content .content-box .content .text {
+    padding: 0 5% 25px 5%;
+  }
+  .content .list .new .new-box .new-content .content-box .content img {
+    margin: 0 auto;
+    width: 80%;
   }
 
   .box .change button {

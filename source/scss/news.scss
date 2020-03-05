@@ -163,6 +163,7 @@
         &.-on {
 
             display: block;
+            transform: none;
         }
 
         .new {
@@ -262,30 +263,84 @@
                 background: $sup-color-2;
             }
 
-//            .new-box {
-//                
-//                position: fixed;
-//                display: flex;
-//                
-//                top: 0px;
-//                left: 0px;
-//                
-//                height: 100vh;
-//                width: 100vw;
-//                
-//                background: rgba(0, 0, 0, 0.2);
-//                
-//                z-index: 10;
-//
-//                .new-content {
-//
-//                    height: 500px;
-//                    width: 80vw;
-//
-//                    background: $sup-color-1;
-//                    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
-//                }
-//            }
+            .new-box {
+
+                position: fixed;
+                display: flex;
+
+                justify-content: center;
+                align-items: center;
+
+                top: 0px;
+                left: 0px;
+
+                height: 100vh;
+                width: 100vw;
+
+                background: rgba(0, 0, 0, 0.2);
+
+                z-index: 10;
+
+                .new-content {
+
+                    display: flex;
+                    flex-direction: column;
+                    width: 80vw;
+
+                    border-radius: 5px;
+                    background: $sup-color;
+                    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+
+                    .title {
+
+                        padding: 0px 5%;
+
+                        line-height: 3;
+
+                        font-size: 2rem;
+                        color: $min-color-8;
+
+                        box-sizing: border-box;
+                    }
+
+                    .content-box {
+
+                        flex-grow: 1;
+
+                        .content {
+
+                            display: flex;
+                            align-items: flex-start;
+
+                            padding: 10px 5% 50px 5%;
+
+                            height: 100%;
+
+                            box-sizing: border-box;
+
+                            .text {
+
+                                flex-grow: 1;
+
+                                padding-right: 10%;
+
+                                line-height: 2;
+                                letter-spacing: 0.25rem;
+
+                                font-size: $font-size-1;
+                                color: $min-color-6;
+
+                                box-sizing: border-box;
+                            }
+
+                            img {
+
+                                width: 30%;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
@@ -416,6 +471,37 @@
                 &:nth-child(even) a::before {
 
                     height: 100px;
+                }
+
+                .new-box {
+
+                    .new-content {
+                        
+                        .title {
+                            
+                            text-align: center;
+                        }
+
+                        .content-box {
+
+                            .content {
+                                
+                                flex-direction: column;
+
+                                .text {
+
+                                    padding: 0 5% 25px 5%;
+                                }
+
+                                img {
+
+                                    margin: 0 auto;
+                                    
+                                    width: 80%;
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
