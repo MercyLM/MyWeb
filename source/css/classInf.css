@@ -483,8 +483,9 @@ body {
 }
 .header .slider {
   display: inline-block;
-  max-height: 500px;
+  max-height: 550px;
   width: 85%;
+  overflow: hidden;
 }
 .header .slider img {
   width: 100%;
