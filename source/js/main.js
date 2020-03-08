@@ -3,8 +3,10 @@ $(window).on("load", function (e) {
     
     var load = $(".loading");
 
+    //先淡出
     load.css("opacity", 0);
     
+    //再刪除
     setTimeout(function(){
         
         load.remove();
