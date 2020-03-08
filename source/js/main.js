@@ -1,7 +1,15 @@
 //完全載入後刪除loading畫面
-$(window).on("load", function () {
+$(window).on("load", function (e) {
+    
+    var load = $(".loading");
 
-    $(".loading").remove();
+    load.css("opacity", 0);
+    
+    setTimeout(function(){
+        
+        load.remove();
+        
+    },1000);
 });
 
 //物件化

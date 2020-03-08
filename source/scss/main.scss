@@ -513,6 +513,23 @@ body {
 
         width: 100%;
 
+        .logo-box {
+
+            display: inline-flex;
+            width: 50%;
+            min-width: 160px;
+            
+            img {
+                
+                margin: auto;
+                
+                height: auto;
+                max-height: 50px;
+                width: 100%;
+                max-width: 245px;
+            }
+        }
+
         .ul-box {
 
             position: fixed;
@@ -634,9 +651,9 @@ body {
             &.-on {
 
                 width: 100%;
-                
+
                 .li-box {
-                    
+
                     display: block;
                 }
             }
@@ -665,7 +682,6 @@ body {
                 .menu-btn {
 
                     position: relative;
-                    margin-top: -4px;
 
                     top: 50%;
 
@@ -702,9 +718,9 @@ body {
                     }
 
                     &.-on {
-                        
+
                         transform: rotate(360deg);
-                        
+
                         height: 0px;
 
                         &:before,
@@ -752,10 +768,11 @@ body {
 
                 .group {
 
-                    margin: 0 1px;
+                    margin: 0 5px;
 
                     height: 35px;
                     line-height: 35px;
+                    width: 75px;
                 }
             }
 

@@ -318,6 +318,18 @@ body {
     text-align: inherit;
     width: 100%;
   }
+  .navbar .logo-box {
+    display: inline-flex;
+    width: 50%;
+    min-width: 160px;
+  }
+  .navbar .logo-box img {
+    margin: auto;
+    height: auto;
+    max-height: 50px;
+    width: 100%;
+    max-width: 245px;
+  }
   .navbar .ul-box {
     position: fixed;
     left: auto;
@@ -407,7 +419,6 @@ body {
   }
   .navbar .btn-box .btn-boder .menu-btn {
     position: relative;
-    margin-top: -4px;
     top: 50%;
     height: 4px;
     background: rgba(150, 89, 28, 0.4);
@@ -459,9 +470,10 @@ body {
     text-align: center;
   }
   footer .footer .group-box .group {
-    margin: 0 1px;
+    margin: 0 5px;
     height: 35px;
     line-height: 35px;
+    width: 75px;
   }
   footer .footer p {
     display: block;
@@ -492,6 +504,7 @@ body {
 }
 
 header {
+  position: relative;
   margin-top: 70px;
   height: 550px;
   width: 100%;
@@ -502,6 +515,7 @@ header .loading {
   height: 100vh;
   width: 100vw;
   background: #faf7f7;
+  opacity: 1;
   z-index: 999;
   transition: 1s;
 }
@@ -557,9 +571,10 @@ header .loading .text .icon:nth-child(3) {
 }
 header .header-background {
   display: block;
-  position: fixed;
+  position: absolute;
   height: 550px;
   width: 100%;
+  background-attachment: fixed;
   background-image: url(../img/slider_img2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -567,7 +582,7 @@ header .header-background {
 }
 header .header-background::before {
   position: absolute;
-  content: " ";
+  content: "";
   height: 100%;
   width: 100%;
   background: black;
@@ -1620,10 +1635,6 @@ main .slider-box .item-list > .item::before {
   }
 }
 @media screen and (max-width: 575px) {
-  .header-text::after {
-    left: -10%;
-  }
-
   .shop-box .box-item > .card-1 {
     top: 75px;
     width: 70%;

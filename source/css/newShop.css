@@ -318,6 +318,18 @@ body {
     text-align: inherit;
     width: 100%;
   }
+  .navbar .logo-box {
+    display: inline-flex;
+    width: 50%;
+    min-width: 160px;
+  }
+  .navbar .logo-box img {
+    margin: auto;
+    height: auto;
+    max-height: 50px;
+    width: 100%;
+    max-width: 245px;
+  }
   .navbar .ul-box {
     position: fixed;
     left: auto;
@@ -407,7 +419,6 @@ body {
   }
   .navbar .btn-box .btn-boder .menu-btn {
     position: relative;
-    margin-top: -4px;
     top: 50%;
     height: 4px;
     background: rgba(150, 89, 28, 0.4);
@@ -459,9 +470,10 @@ body {
     text-align: center;
   }
   footer .footer .group-box .group {
-    margin: 0 1px;
+    margin: 0 5px;
     height: 35px;
     line-height: 35px;
+    width: 75px;
   }
   footer .footer p {
     display: block;

@@ -23,6 +23,8 @@
 //header
 header {
 
+    position: relative;
+    
     margin-top: 70px;
 
     height: 550px;
@@ -38,6 +40,8 @@ header {
         width: 100vw;
 
         background: $bg-min-color;
+        
+        opacity: 1;
 
         z-index: 999;
 
@@ -124,11 +128,12 @@ header {
     .header-background {
 
         display: block;
-        position: fixed;
+        position: absolute;
 
         height: 550px;
         width: 100%;
 
+        background-attachment: fixed;
         background-image: url(../img/slider_img2.jpg);
         background-repeat: no-repeat;
         background-size: cover;
@@ -138,7 +143,7 @@ header {
         &::before {
 
             position: absolute;
-            content: " ";
+            content: "";
 
             height: 100%;
             width: 100%;
@@ -1834,11 +1839,6 @@ main {
 }
 
 @media screen and (max-width : 575px) {
-
-    .header-text::after {
-
-        left: -10%;
-    }
 
     .shop-box {
 
