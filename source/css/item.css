@@ -552,6 +552,15 @@ main .item-box .box-information .box-content > .title > span {
   letter-spacing: 0.25rem;
   color: #96591c;
 }
+main .item-box .box-information .box-content > .title::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0px;
+  height: 1px;
+  width: 95%;
+  background: #c09b77;
+}
 main .item-box .box-information .box-content > .text {
   flex-grow: 8;
   font-size: 1.5rem;

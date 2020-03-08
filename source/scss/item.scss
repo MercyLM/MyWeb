@@ -102,6 +102,20 @@ main {
 
                         color: $min-color;
                     }
+                    
+                    &::after {
+                        
+                        content: "";
+                        position: absolute;
+                        
+                        bottom: -5px;
+                        left: 0px;
+                        
+                        height: 1px;
+                        width: 95%;
+                        
+                        background: $sup-color-1;
+                    }
                 }
 
                 > .text {
