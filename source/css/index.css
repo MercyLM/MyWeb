@@ -571,10 +571,9 @@ header .loading .text .icon:nth-child(3) {
 }
 header .header-background {
   display: block;
-  position: absolute;
+  position: fixed;
   height: 550px;
   width: 100%;
-  background-attachment: fixed;
   background-image: url(../img/slider_img2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
