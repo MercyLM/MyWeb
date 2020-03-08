@@ -546,8 +546,9 @@ main .item-box .box-information .box-content > .title {
 }
 main .item-box .box-information .box-content > .title > span {
   position: absolute;
-  right: 0px;
+  right: 5%;
   font-weight: bold;
+  font-size: 2.5rem;
   letter-spacing: 0.25rem;
   color: #96591c;
 }
