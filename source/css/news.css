@@ -746,6 +746,9 @@ body {
     width: 100px;
   }
 
+  .content .list .new a {
+    pointer-events: none;
+  }
   .content .list .new a span,
 .content .list .new a p {
     display: block;
