@@ -270,6 +270,7 @@
 
         > .bg {
 
+            height: 400px;
             width: 100%;
         }
 
@@ -284,6 +285,7 @@
         > .title {
 
             left: 0px;
+            transform: translateY(50%);
 
             height: 100px;
             width: 200px;
